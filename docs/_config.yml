@@ -1,14 +1,13 @@
 title: LSA Programming Specifications
 description: "The specs"
-theme: jekyll-theme-primer
 
-# Enable Just the Docs directly via GitHub Pages remote themes
+# Use the Just the Docs theme via GitHub Pages remote theme support.
 remote_theme: just-the-docs/just-the-docs
 
 # Upper-right link to repository home page
 aux_links:
   "Main GitHub Repository":
-    - "https://github.com/HMIS/LSASampleCode"
+    - "https://github.com/abtassociates/LSASampleCode"
 
 aux_links_new_tab: true
 
