@@ -668,7 +668,7 @@ flowchart LR
 
 | **ch_Exclude** | **Column Description** |
 |----|----|
-| **PersonalID** | **PersonalD** |
+| **PersonalID** | **PersonalID** |
 | **ExcludeDate** | Distinct dates between **CHStart** and **LastActive** when client was either in TH or housed in RRH/PSH. |
 
 ## Logic
@@ -736,7 +736,7 @@ flowchart LR
 
 | **ch_Include** | **Column Description** |
 |----|----|
-| **PersonalID** | **PersonalD** |
+| **PersonalID** | **PersonalID** |
 | **ESSHStreetDate** | Distinct dates between **CHStart** and **LastActive** when client was in ES/SH or on the street; also referred to as ES/SH/Street dates. |
 
 ## Logic
