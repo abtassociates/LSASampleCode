@@ -108,7 +108,7 @@ Rows represent specific combinations of these data points. Each active client is
 
 It is critical that all values in this column are integers > 0. The largest possible number of rows – when each row includes a count of one or more people represented by the distinct combination of column values – is limited to the number of active clients. However, there are billions of possible combinations of column values, and including rows that that do not represent any clients would result in files of unmanageable size.
 
-The data type for every column in LSAPerson is integer; no value may be NULL.
+For business logic, see [Section 5 - LSAPerson](05 - LSAPerson.md).
 
 | #   | Column Name          | Notes                                                                                                                           |
 | --- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
@@ -192,7 +192,7 @@ This file may empty (other than headers) for the HIC.
 
 It is critical that all values in the **RowTotal** column are integers > 0. When each row includes a count of one or more households represented by the distinct combination of column values, the total number of rows– is limited to the number of active households. However, the number of possible distinct combinations of column values is massive and including rows that do not represent any households could result in unmanageable file sizes.
 
-For business logic, see [Section 6 - LSAHousehold](06 - LSAHousehold).
+For business logic, see [Section 6 - LSAHousehold](06 - LSAHousehold.md).
 
 | # | Column Name | DataType | List | Nullable | Description | Max Length |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -280,7 +280,7 @@ Rows represent specific combinations of these data points. Unlike LSAHousehold, 
 
 This file may be empty (other than headers) for the HIC.
 
-For business logic, see [Section 7 - LSAExit](08 - LSAExit).
+For business logic, see [Section 7 - LSAExit](07 - LSAExit.md).
 
 | # | Column Name | DataType | List | Nullable | Description | Max Length |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -327,9 +327,9 @@ The **Value** column holds the average or count. Other columns identify the repo
 
 For business logic, see:
 
-- Section 8 - [LSACalculated Averages](08 - LSACalculated Averages)
-- Section 9 - [LSACalculated Counts](09 - LSACalculated Counts)
-- Section 10 - [LSACalculated Data Quality Counts](10 - LSACalculated Data Quality Counts)
+- Section 8 - [LSACalculated Averages](08 - LSACalculated Averages.md)
+- Section 9 - [LSACalculated Counts](09 - LSACalculated Counts.md)
+- Section 10 - [LSACalculated Data Quality Counts](10 - LSACalculated Data Quality Counts.md)
 
 | ColumnNumber | Column Name | DataType | List | Nullable | Description | Max Length |
 | --- | --- | --- | --- | --- | --- | --- |
