@@ -1,7 +1,7 @@
 /*
 LSA Sample Code
 05_12 to 05_15 LSAPerson Project Group and Population Household Types.sql  
-https://github.com/HMIS/LSASampleCode
+https://github.com/abtassociates/LSASampleCode
 
 Author:  Molly McEvilley
 Last Update: 7/27/2026

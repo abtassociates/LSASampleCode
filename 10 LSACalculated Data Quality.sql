@@ -1,7 +1,7 @@
 /*
 LSA Sample Code
 Name:  10 LSACalculated Data Quality.sql
-https://github.com/HMIS/LSASampleCode
+https://github.com/abtassociates/LSASampleCode
 
 Author:  Molly McEvilley
 Last Update: 8/1/2026
@@ -378,7 +378,7 @@ Relevant Sections:
 	left outer join hmis_Services bn on bn.EnrollmentID = n.EnrollmentID and bn.RecordType = 200
 		and bn.DateProvided between n.EntryDate and coalesce(dateadd(dd, -1, x.ExitDate), rpt.ReportEnd)
 		and bn.DateDeleted is NULL
-	where (x.ExitDate is null or (x.ExitDate >= rpt.ReportStart and x.ExitDate > n.EntryDate)
+	where (x.ExitDate is null or (x.ExitDate >= rpt.ReportStart and x.ExitDate > n.EntryDate))
 		and bn.EnrollmentID is null
 		and n.DateDeleted is null
 		and hoh.DateDeleted is null 

@@ -1,7 +1,7 @@
 /*
 LSA Sample Code
 06 LSAHousehold.sql  
-https://github.com/HMIS/LSASampleCode
+https://github.com/abtassociates/LSASampleCode
 
 Author:  Molly McEvilley
 Last Update: 7/27/2026
@@ -10,14 +10,14 @@ Source: LSA Programming Specifications v8
 Relevant Sections:
 	6.1.	Get Distinct Households for LSAHousehold
 	6.2.	Set Population Identifiers for LSAHousehold
-	6.3.	EST/RRH/PSH/RRHSOStatus – LSAHousehold
-	6.4.	RRH/PSH/RRHSOMoveIn – LSAHousehold
-	6.5.	EST/RRH/PSHGeography – LSAHousehold
-	6.6.	EST/RRH/PSHLivingSit – LSAHousehold
-	6.7.	EST/RRH/PSHDestination – LSAHousehold
+	6.3.	EST/RRH/PSH/RRHSOStatus ï¿½ LSAHousehold
+	6.4.	RRH/PSH/RRHSOMoveIn ï¿½ LSAHousehold
+	6.5.	EST/RRH/PSHGeography ï¿½ LSAHousehold
+	6.6.	EST/RRH/PSHLivingSit ï¿½ LSAHousehold
+	6.7.	EST/RRH/PSHDestination ï¿½ LSAHousehold
 	6.8.	EST/RRH/PSH Population Identifiers
 	6.9.	System Engagement Status and Return Time
-	6.10.	RRHPreMoveInDays – LSAHousehold
+	6.10.	RRHPreMoveInDays ï¿½ LSAHousehold
 	6.11.	Dates Housed in PSH or RRH (sys_Time)
 	6.12.	Get Last Inactive Date
 	6.13.	Get Dates of Other System Use (sys_Time)

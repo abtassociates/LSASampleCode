@@ -1,7 +1,7 @@
 /*
 LSA Sample Code
 05_01 to 05_11 LSAPerson Records and Demographics.sql  
-https://github.com/HMIS/LSASampleCode
+https://github.com/abtassociates/LSASampleCode
 
 Author:  Molly McEvilley
 Last Update: 7/27/2026
@@ -12,13 +12,13 @@ Relevant Sections:
 	5.2.	Identify Active and Active in Residence (AIR) Enrollments
 	5.3.	Get Active Clients for LSAPerson
 	5.4.	LSAPerson Demographics
-	5.5.	Time Spent in ES/SH or on the Street – LSAPerson
+	5.5.	Time Spent in ES/SH or on the Street ï¿½ LSAPerson
 	5.6.	Enrollments Relevant to Counting ES/SH/Street Dates
 	5.7.	Get Dates to Exclude from Counts of ES/SH/Street Days (ch_Exclude)
 	5.8.	Get Dates to Include in Counts of ES/SH/Street Days (ch_Include)
 	5.9.	Get ES/SH/Street Episodes (ch_Episodes)
-	5.10.	CHTime and CHTimeStatus – LSAPerson
-	5.11.	EST/RRH/PSH/RRHSOAgeMin and EST/RRH/PSH/RRHSOAgeMax – LSAPerson
+	5.10.	CHTime and CHTimeStatus ï¿½ LSAPerson
+	5.11.	EST/RRH/PSH/RRHSOAgeMin and EST/RRH/PSH/RRHSOAgeMax ï¿½ LSAPerson
 
 
 

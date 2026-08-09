@@ -5,7 +5,7 @@ nav_order: 2
 parent: "LSA Programming Specifications"
 has_toc: true
 toc_levels: 1..1
-last_modified_date: 2026-08-01
+last_modified_date: 2026-08-09
 ---
 
 - Contents
@@ -176,7 +176,7 @@ The definitions here are intended to serve as a general reference and are not co
 
 # 1.4 Changes for Reporting on FY2026
 
-This section is limited to a high-level review of changes. Tracked versions of this document and [more detailed information about each change](https://github.com/HMIS/LSASampleCode/issues?q=type%3A%22LSA%20Update%22) are available in the [GitHub repository](https://github.com/HMIS/LSASampleCode).
+This section is limited to a high-level review of changes. Tracked versions of this document and [more detailed information about each change](https://github.com/abtassociates/LSASampleCode/issues?q=type%3A%22LSA%20Update%22) are available in the [GitHub repository](https://github.com/abtassociates/LSASampleCode).
 
 ## Include Counts of Four Digit Social Security Numbers in LSAReport DQ Counts
 A new column ([SSN4Digit](11 - LSAReport.md#ssn4digit)) has been added to the DQ counts in LSAReport to capture the number clients served during the report period with 4 digit SSNs.  These will be excluded from the count of SSNMissingOrInvalid.  

@@ -1,7 +1,7 @@
 /*
 LSA Sample Code
 04_02 to 04_07 Get Other PDDEs.sql
-https://github.com/HMIS/LSASampleCode
+https://github.com/abtassociates/LSASampleCode
 
 Author:  Molly McEvilley
 Last Update: 7/27/2026

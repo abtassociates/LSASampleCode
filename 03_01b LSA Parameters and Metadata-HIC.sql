@@ -1,7 +1,7 @@
 /*
 LSA FY2025 Sample Code
 Name:	03_01b LSA Parameters and Metadata - HIC.sql 
-https://github.com/HMIS/LSASampleCode
+https://github.com/abtassociates/LSASampleCode
 
 Author:  Molly McEvilley
 Last Update: 7/27/2026

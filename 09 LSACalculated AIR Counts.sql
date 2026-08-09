@@ -1,14 +1,14 @@
 /*
 LSA Sample Code
 Name:  09 LSACalculated AIR Counts.sql  
-https://github.com/HMIS/LSASampleCode
+https://github.com/abtassociates/LSASampleCode
 
 Author:  Molly McEvilley
 Last Update: 7/27/2026
 
 Source: LSA Programming Specifications v8  
 Relevant Sections:	
-	
+	09 - LSACalculated Counts
 
 Uses static reference tables:
 	ref_RowValues - Required Cohort, Universe, SystemPath values for each RowID

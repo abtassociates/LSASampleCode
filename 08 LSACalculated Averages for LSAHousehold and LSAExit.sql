@@ -1,7 +1,7 @@
 /*
 LSA Sample Code
 Name:  08 LSACalculated Averages for LSAHousehold and LSAExit.sql  
-https://github.com/HMIS/LSASampleCode
+https://github.com/abtassociates/LSASampleCode
 
 Author:  Molly McEvilley
 Last Update: 7/27/2026

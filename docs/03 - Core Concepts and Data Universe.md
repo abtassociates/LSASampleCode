@@ -5,7 +5,7 @@ nav_order: 4
 parent: "LSA Programming Specifications"
 has_toc: true
 toc_levels: 1..1
-last_modified_date: 2026-08-01
+last_modified_date: 2026-08-09
 ---
 
 - Contents
@@ -54,6 +54,7 @@ As described, it is a process that creates records in two ‘temporary tables’
 Household type is determined by the ages of household members. The calculation of age and household type is context-dependent – some processes require household type based on ages at project entry; others require household type based on age at the later of project entry or the start of a given cohort period. As described:
 
 There are multiple age columns in tlsa\_Enrollment (**EntryAge**, **ActiveAge**, etc.) and multiple household type columns in tlsa\_HHID (**EntryHHType**, **ActiveHHType**, etc.). Descriptions of business logic associated with age and household type processes are not repeated in subsequent sections.
+
 # 3.1 Report Parameters and Metadata (lsa\_Report)
 
 
@@ -203,7 +204,7 @@ This section defines the logic associated with deriving the cohort periods based
 | <u>ReportStart</u> |
 | <u>ReportEnd</u>   |
 
-## Source
+## Target
 
 Cohorts and cohort periods are referenced in subsequent steps using an intermediate data construct/temporary table called tlsa\_CohortDates.
 
@@ -316,7 +317,7 @@ The logic associated with values for columns with names in **bold** below is des
 | **HoHID**          | The unique identifier for the head of household – i.e., the _PersonalID_ from the enrollment associated with the _HouseholdID_ where _RelationshipToHoH_ = 1.                                                                                                                                                                                                                                                                       |
 | **EnrollmentID**   | From hmis\_Enrollment                                                                                                                                                                                                                                                                                                                                                                                                               |
 | **ProjectID**      | From hmis\_Enrollment                                                                                                                                                                                                                                                                                                                                                                                                               |
-| **LSAProjectType** | From hmis\_Project _ProjectType_ and _RRHSubType_ columns.If _ProjectType_ = 13 and _RRHSubType_ \= 2, **LSAProjectType** = 13 If _ProjectType_ = 13 and _RRHSubType_ \= 1, **LSAProjectType** = 15 Otherwise, LSAProjectType = hmis\_Project._ProjectType_.                                                                                                                                                                        |
+| **LSAProjectType** | From hmis\_Project _ProjectType_ and _RRHSubType_ columns. If _ProjectType_ = 13 and _RRHSubType_ \= 2, **LSAProjectType** = 13 If _ProjectType_ = 13 and _RRHSubType_ \= 1, **LSAProjectType** = 15 Otherwise, LSAProjectType = hmis\_Project._ProjectType_.                                                                                                                                                                        |
 | **EntryDate**      | The effective entry date for the enrollment, which may differ from the recorded _EntryDate_ in HMIS for night-by-night ES enrollments. (See logic section for **EntryDate** below.)                                                                                                                                                                                                                                                 |
 | **MoveInDate**     | The move-in date for RRH/PSH enrollments, which may differ from the recorded _MoveInDate_ in HMIS. (See logic section for **MoveInDate** below.)                                                                                                                                                                                                                                                                                    |
 | **ExitDate**       | The effective exit date for the HoH enrollment, which may differ from the _ExitDate_ recorded in hmis\_Exit. (See logic section for **ExitDate** below.)                                                                                                                                                                                                                                                                            |
@@ -391,7 +392,7 @@ The logic associated with values for columns with names in **bold** below is des
 
 **HMISEnd** refers to the *HMISParticipationStatusEndDate* associated with **HMISStart;** dates after <u>ReportEnd</u> should be evaluated as NULL**.**
 
-### BedNightDates, FirstBedNight and LastBedNight
+### LastBedNight (tlsa_HHID)
 
 For night-by-night shelter (*ProjectType* = 1) enrollments, a Services record where *RecordType* = 200 is counted as a *BedNightDate* if *DateProvided* is:
 
@@ -403,8 +404,6 @@ For night-by-night shelter (*ProjectType* = 1) enrollments, a Services record wh
 -   <*ExitDate* (if not null); and
 -   < *OperatingEndDate* (if not null); and
 -   < **HMISEnd** (if not null).
-
-**FirstBedNight** is the earliest *BedNightDate* associated with an enrollment.
 
 **LastBedNight** is the latest *BedNightDate* associated with an enrollment.
 
@@ -434,7 +433,7 @@ Potentially relevant *HouseholdID*s are those associated with one or more projec
     -   *ExitDate* > *OperatingStartDate*
 -   If*ProjectType* = 1, there is at least one *BedNightDate* record for the enrollment (see criteria above).
 
-### EntryDate
+### EntryDate (tlsa_HHID)
 
 To be included in the LSA, an enrollment must have an *EntryDate* that meets the following criteria:
 -   <= <u>ReportEnd</u>
@@ -449,7 +448,7 @@ Under some circumstances, the LSA will use an adjusted **EntryDate**:
 | 2        | _EntryDate_ >= **HMISStart**; and _EntryDate_ >= _OperatingStartDate_ | _EntryDate_                                     |
 | 3        | (any other)                                                           | The later of _OperatingStartDate/_**HMISStart** |
 
-### MoveInDate
+### MoveInDate (tlsa_HHID)
 
 The *MoveInDate* is set for the head of household from the HMIS enrollment record only if it occurs on or before the end of the report period and is logically consistent with the project type, the head of household’s entry/exit dates, and the project’s operating/HMIS participation dates. Under some circumstances, the LSA will use an adjusted **MoveInDate**:
 
@@ -464,7 +463,7 @@ The *MoveInDate* is set for the head of household from the HMIS enrollment recor
 | 2        | _MoveInDate_ is NULL or _(MoveInDate_ \>= **HMISStart** _and MoveInDate_ \>= _OperatingStartDate)_ | _MoveInDate_                                    |
 | 3        | (any other)                                                                                        | The later of _OperatingStartDate_/**HMISStart** |
 
-### ExitDate
+### ExitDate (tlsa_HHID)
 
 If the recorded *ExitDate* (or lack thereof) associated with an enrollment is inconsistent with other data, reporting must be based on an adjusted **ExitDate** consistent with the logic below. If applicable, *Destination* for these enrollments is reported as ‘Data missing or invalid’ (99).
 
@@ -647,7 +646,7 @@ An enrollment should be included in tlsa\_Enrollment if:
     -   On or after tlsa\_HHID.**EntryDate**; and
     -   On or before tlsa\_HHID.**ExitDate** (if it is not NULL)
 
-### EntryDate
+### EntryDate (tlsa_Enrollment)
 
 For night by night enrollments (tlsa\_HHID.**LSAProjectType** = 1), **EntryDate** is set to the earliest *BedNightDate* for the enrollment that is consistent with the record selection criteria.
 
@@ -656,7 +655,7 @@ For all other enrollments, tlsa\_Enrollment.**EntryDate** should be set to the l
 -   hmis\_Enrollment.*EntryDate*; or
 -   tlsa\_HHID.**EntryDate**.
 
-### MoveInDate
+### MoveInDate (tlsa_Enrollment)
 
 All requirements for *MoveInDate* that apply to the active household also apply to all household members’ individual enrollments. If the household’s effective *MoveInDate* is logically inconsistent with a household member’s entry/exit dates, additional logic applies to setting the household member’s effective *MoveInDate.*
 
@@ -672,11 +671,11 @@ All requirements for *MoveInDate* that apply to the active household also apply 
 | HHID.**MoveInDate** = Exit._ExitDate_ and HHID.**ExitDate** > Exit._ExitDate_ | NULL                   |
 | (any other)                                                                   | HHID.**MoveInDate**    |
 
-### Last Bed Night for Night-by-Night Shelter Enrollments
+### LastBedNight (tlsa_Enrollment)
 
 Where tlsa\_HHID.**LSAProjectType** = 1, **LastBedNight** refers to the most recent record (hmis\_Services.*RecordType* = 200) of a bed night that meets the criteria for record selection.
 
-### ExitDate
+### ExitDate  (tlsa_Enrollment)
 
 All requirements for *ExitDate* that apply to the active household apply to household members. In addition, no household member’s enrollment may continue past the head of household’s actual or effective exit date (tlsa\_HHID.**ExitDate**).
 

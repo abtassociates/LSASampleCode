@@ -4,7 +4,7 @@ title: "6 - LSAHousehold"
 nav_order: 7
 parent: "LSA Programming Specifications"
 has_toc: true
-last_modified_date: 2026-07-30
+last_modified_date: 2026-08-09
 ---
 
 - Contents
@@ -1291,6 +1291,9 @@ Set **Other3917Days** \= the sum of:
 
 -   The count of distinct **sysDate**s in sys\_Time where **sysStatus** = 7 and **HoHID/HHType** \= tlsa\_Household **HoHID/HHType;** and
 -   The count of distinct dates between the earliest relevant *DateToStreetESSH* and **LastInactive** – or the difference in days between the earliest *DateToStreetESSH* and **LastInactive**, as described in [6.14 Get Other Dates Homeless from 3.917A/B Living Situation](06 - LSAHousehold.md#614-get-other-dates-homeless-from-3917ab-living-situation).
+
+### TotalHomelessDays
+Set **TotalHomelessDays** = **SystemHomelessDays** + **Other3917Days**.
 
 # 6.16 Update EST/RRH/PSH/RRHSOStatus
 ```mermaid

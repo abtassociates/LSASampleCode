@@ -4,13 +4,13 @@ title: "5 - LSAPerson"
 nav_order: 6
 parent: "LSA Programming Specifications"
 has_toc: true
-last_modified_date: 2026-08-01
+last_modified_date: 2026-08-09
 ---
 
 - Contents
 {:toc}
 
-# 5.1 Identify Active and Active in Residence (AIR) HouseholdIDs
+# 5.1 Identify Active and Active-in-Residence (AIR) HouseholdIDs
 ``` mermaid
 flowchart LR
 
@@ -62,14 +62,14 @@ References to active **HouseholdID**s and/or any of the columns included in tlsa
 
 ## Logic
 
-### Active
+### Active Households
 
 Set **Active** = 1 for tlsa_HHID.**HouseholdID**s where:
 - There is a record for the **ProjectID** in lsa_Project; and
 - **EntryDate** \<= <u>ReportEnd; and</u>
 - **ExitDate** is NULL or **ExitDate** \>= <u>ReportStart</u>
 
-### AIR
+### AIR Households
 
 Set **AIR** = 1 for tlsa_HHID.**HouseholdID**s where:
 - **Active** = 1; and:
@@ -81,7 +81,7 @@ Set **AIR** = 1 for tlsa_HHID.**HouseholdID**s where:
 (Note: RRH-SO projects are considered non-residential and enrollments
 are excluded from consideration.)
 
-# 5.2 Identify Active and Active in Residence (AIR) Enrollments 
+# 5.2 Identify Active and Active-in-Residence (AIR) Enrollments 
 ``` mermaid
 flowchart LR
 
@@ -127,13 +127,13 @@ References in subsequent sections to active enrollments and of the columns in tl
 
 ## Logic
 
-### Active
+### Active Enrollments
 
 **Active** = 1 is set to identify the subset of enrollments in tlsa_Enrollment where:
 - The **HouseholdID** matches a **HouseholdID** in tlsa_HHID where  **Active** = 1; and
 - **ExitDate** is NULL or **ExitDate** \>= <u>ReportStart</u>
 
-### AIR
+### AIR Enrollments
 
 **AIR** = 1 is set to identify the subset of enrollments in tlsa_Enrollment where:
 

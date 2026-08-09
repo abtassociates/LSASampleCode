@@ -1,7 +1,7 @@
 /*
 LSA Sample Code
 03_02 to 03_06 HMIS Households and Enrollments.sql 
-https://github.com/HMIS/LSASampleCode
+https://github.com/abtassociates/LSASampleCode
 
 Author:  Molly McEvilley
 Last Update: 7/27/2026

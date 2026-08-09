@@ -1,7 +1,7 @@
 /*
 LSA Sample Code
 01 Temp Reporting and Reference Tables.sql
-https://github.com/HMIS/LSASampleCode
+https://github.com/abtassociates/LSASampleCode
 
 Author:  Molly McEvilley
 Last Update: 7/27/2026

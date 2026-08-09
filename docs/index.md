@@ -83,12 +83,12 @@ last_modified_date: 2026-08-01
 [5 - HMIS Business Logic - LSAPerson](05 - LSAPerson.md)
 
 - [5.1 Identify Active and Active in Residence (AIR) HouseholdIDs](05 - LSAPerson.md#51-identify-active-and-active-in-residence-air-householdids)
-   - [Active](05 - LSAPerson.md#active)
-   - [AIR](05 - LSAPerson.md#air)
+   - [Active](05 - LSAPerson.md#activehouseholds)
+   - [AIR](05 - LSAPerson.md#airhouseholds)
 
 - [5.2 Identify Active and Active in Residence (AIR) Enrollments](05 - LSAPerson.md#52-identify-active-and-active-in-residence-air-enrollments)
-   - [Active](05 - LSAPerson.md#active)
-   - [AIR](05 - LSAPerson.md#air)
+   - [Active](05 - LSAPerson.md#activeenrollments)
+   - [AIR](05 - LSAPerson.md#airenrollments)
 
 - [5.3 Get Active Clients for LSAPerson](05 - LSAPerson.md#53-get-active-clients-for-lsaperson)
 
@@ -195,6 +195,7 @@ last_modified_date: 2026-08-01
    - [SystemDaysNotPSHHoused](06 - LSAHousehold.md#systemdaysnotpshhoused)
    - [PSHHousedDays](06 - LSAHousehold.md#pshhouseddays)
    - [Other3917Days](06 - LSAHousehold.md#other3917days)
+   - [TotalHomelessDays](06 - LSAHousehold.md#totalhomelessdays)
 
 - [6.16 Update EST/RRH/PSH/RRHSOStatus](06 - LSAHousehold.md#616-update-estrrhpshrrhsostatus)
 
@@ -213,6 +214,7 @@ last_modified_date: 2026-08-01
    - [Exit Households](07 - LSAExit.md#exit-households)
    - [QualifyingExitHHID](07 - LSAExit.md#qualifyingexithhid)
    - [ExitFrom](07 - LSAExit.md#exitfrom)
+   - [ExitTo](07 - LSAExit.md#exitto)
 
 - [7.3 Set ReturnTime for Exit Cohort Households](07 - LSAExit.md#73-set-returntime-for-exit-cohort-households)
    - [Household Returns](07 - LSAExit.md#household-returns)
@@ -381,8 +383,8 @@ last_modified_date: 2026-08-01
 
 - [11.9 LSAReport](11 - LSAReport.md#119-lsareport)
 
-[LSA Data Dictionary - Files and Columns](LSA Data Dictionary - Columns.md)
+- [LSA Data Dictionary - Files and Columns](LSA Data Dictionary - Columns.md)
 
-[LSA Data Dictionary - Lists](LSA Data Dictionary - Lists.md)
+- [LSA Data Dictionary - Lists](LSA Data Dictionary - Lists.md)
 
-[LSA Temporary and Reference Tables](LSA Temporary and Reference Tables.md)
+- [LSA Temporary and Reference Tables](LSA Temporary and Reference Tables.md)

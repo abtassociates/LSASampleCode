@@ -1,7 +1,7 @@
 /*
 LSA Sample Code
 00 Totally Optional HMIS Table Indexes.sql
-https://github.com/HMIS/LSASampleCode
+https://github.com/abtassociates/LSASampleCode
 
 Author: Molly McEvilley
 Last Update: 7/31/2025

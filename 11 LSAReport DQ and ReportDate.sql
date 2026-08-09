@@ -1,7 +1,7 @@
 /*
 LSA Sample Code
 Name: 11 LSAReport DQ and ReportDate.sql
-https://github.com/HMIS/LSASampleCode
+https://github.com/abtassociates/LSASampleCode
 
 Author:  Molly McEvilley
 Last Update: 8/1/2026
@@ -193,7 +193,7 @@ update rpt
 set rpt.DisablingCond = (select count(distinct n.EnrollmentID)
 	from tlsa_Enrollment n
 	where (n.AIR = 1 or (n.Active = 1 and rpt.LSAScope <> 3))
-	and (n.DisabilityStatus is NULL or n.DisabilityStatus not in (0,1)
+	and (n.DisabilityStatus is NULL or n.DisabilityStatus not in (0,1))
 	)
 from lsa_Report rpt
 

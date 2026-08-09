@@ -1,7 +1,7 @@
 /*
 LSA Sample Code
 Name:  02 LSA Output Tables.sql 
-https://github.com/HMIS/LSASampleCode
+https://github.com/abtassociates/LSASampleCode
 
 Author:  Molly McEvilley
 Last Update: 7/30/2026

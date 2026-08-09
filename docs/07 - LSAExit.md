@@ -4,7 +4,7 @@ title: "7 - LSAExit"
 nav_order: 8
 parent: "LSA Programming Specifications"
 has_toc: true
-last_modified_date: 2026-07-30
+last_modified_date: 2026-08-09
 ---
 
 - Contents
@@ -127,7 +127,7 @@ For households – unique combinations of **HoHID** and relevant household type 
 | EntryDate      |
 | MoveInDate     |
 | ExitDate       |
-| ExitTo         |
+| ExitDest         |
 
 ## Target
 
@@ -140,7 +140,7 @@ For households – unique combinations of **HoHID** and relevant household type 
 | **Cohort**             | Identifier for the cohort in which the exit occurs – from tlsa_HHID.**ExitCohort**.                                                                                                                                                                   |
 | Stat                   | The household status related to continuum engagement in the two years prior to the *EntryDate* for the qualifying exit.                                                                                                                               |
 | **ExitFrom**           | Identifies the project type from which household exited and, for RRH/PSH, distinguishes between exits after a permanent housing placement (*MoveInDate*) and exits without placement.                                                                 |
-| **ExitTo**             | Identifies the exit destination for the qualifying exit (from tlsa_HHID **QXDestination**)                                                                                                                                                            |
+| **ExitTo**             | Identifies the exit destination for the qualifying exit (from tlsa_HHID **ExitDest**)                                                                                                                                                            |
 | ReturnTime             | For households with at least one enrollment in a continuum ES/SH/TH/RRH/PSH projects in the 15-720 days after the qualifying exit, the number of days between the qualifying exit date and the earliest subsequent *EntryDate*.                       |
 | HHVet                  | Identifies whether or not the household includes a veteran.                                                                                                                                                                                           |
 | HHChronic              | Identifies whether or not the head of household or any adult household member is chronically homeless or has other specific patterns of long-term homelessness.                                                                                       |
@@ -195,6 +195,9 @@ Crosswalk tlsa\_HHID. **LSAProjectType** and tlsa\_HHID **MoveInDate** for the r
 | 3              | NULL       | 8              | PSH without placement in PH    |
 | 15             | Not NULL   | 9              | RRH-SO after move-in to PH     |
 | 15             | NULL       | 10             | RRH-SO without placement in PH |
+
+### ExitTo
+Set **ExitTo** to the **ExitDest** value from tlsa_HHID.  
 
 # 7.3 Set ReturnTime for Exit Cohort Households
 ``` mermaid
