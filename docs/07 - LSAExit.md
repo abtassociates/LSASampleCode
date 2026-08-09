@@ -1014,10 +1014,14 @@ flowchart LR
 | Cohort                    | From tlsa\_Exit                                                                                                                                                                                                                    |
 | HoHID                     | From tlsa\_Exit                                                                                                                                                                                                                    |
 | HHType                    | From tlsa\_Exit                                                                                                                                                                                                                    |
-| StartDate                 | -   For tlsa\_HHID **EnrollmentID**s in night-by-night ES, each _BedNightDate_ associated with the enrollment between LookbackDate and **CohortEnd** -   For all other tlsa\_HHID enrollments, the **EntryDate**                   |
-| EndDate                   | -   For tlsa\_HHID **EnrollmentID**s in night-by-night ES, the earlier of \[**StartDate** + 6 days\] or **CohortEnd** -   For all other tlsa\_HHID enrollments, the earlier non-NULL of \[**ExitDate** + 6 days\] or **CohortEnd** |
-| **tlsa\_Exit**            |                                                                                                                                                                                                                                    |
-| LastInactive              |                                                                                                                                                                                                                                    |
+| StartDate                 | For tlsa\_HHID **EnrollmentID**s in night-by-night ES, each _BedNightDate_ associated with the enrollment between LookbackDate and **CohortEnd** -   For all other tlsa\_HHID enrollments, the **EntryDate**                   |
+| EndDate                   | For tlsa\_HHID **EnrollmentID**s in night-by-night ES, the earlier of \[**StartDate** + 6 days\] or **CohortEnd** -   For all other tlsa\_HHID enrollments, the earlier non-NULL of \[**ExitDate** + 6 days\] or **CohortEnd** |
+
+|tlsa\_Exit |
+|--|
+|LastInactive |
+
+
 ## Logic
 
 This step identifies, based on the qualifying exit and potentially relevant inactive enrollments from the previous step, the date immediately prior to the first day of continuous system engagement for exit cohort households – or the household’s last inactive date prior to the qualifying exit.
