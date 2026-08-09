@@ -271,6 +271,7 @@ The logic associated with **ReturnTime** is different, however:
 
 -   In tlsa\_Household, **ReturnTime** is associated with **Stat** and specifies the length of time between enrollment activity *prior to active enrollments* and the earliest active enrollment.
 -   In tlsa\_Exit, **ReturnTime** is not associated with **Stat** – it specifies the length of time *after the qualifying exit*.
+  
 ---   
 
 
@@ -614,8 +615,8 @@ For purposes of the LSA, an ‘episode’ is a continuous – i.e., uninterrupte
 Each record in ch\_Episodes\_exit represents an uninterrupted series of ES/SH/Street dates identified in the previous step. Based on ch\_Include\_exit for each HoH/adult in tlsa\_Person:
 
 -   **episodeStart** is any **ESSHStreetDate** where there is no (**ESSHStreetDate** – 1 day) for the same *PersonalID* – i.e., any ES/SH/Street date where there is no information to indicate that the client was in ES/SH or on the street on the day before.
--   **episodeEnd** is the first **ESSHStreetDate** after **episodeStart** where (**ESSHStreetDate** + 1 day) does not exist
--   
+-   **episodeEnd** is the first **ESSHStreetDate** after **episodeStart** where (**ESSHStreetDate** + 1 day) does not exist.
+    
 # 7.8 CHTime and CHTimeStatus for Exit Cohorts
 
 ``` mermaid
@@ -629,7 +630,6 @@ flowchart LR
 	H1:::HMIS
 
 	classDef Temp stroke:#FF5978, fill:#FFDFE5, color:#8E2236
-
 	classDef HMIS stroke:#374D7C, fill:#E2EBFF, color:#374D7C
 	
 ```
@@ -719,6 +719,7 @@ After these values are set, there is one additional update to **CHTimeStatus** t
 | **LSAProjectType** is not in (0,1,8) and _LengthOfStay_ in (10,11)                                                  | **AND** | _PreviousStreetESSH_ is NULL; or _PreviousStreetESSH_ not in (0,1); or _PreviousStreetESSH_ = 1 and _DateToStreetESSH_ is NULL; or _TimesHomelessPastThreeYears_ in (8,9,99); or _TimesHomelessPastThreeYears_ is NULL; or _MonthsHomelessPastThreeYears_ in (8,9,99); or _MonthsHomelessPastThreeYears_ is NULL |
 
 # 7.9 Set Population Identifiers for Exit Cohort Households
+
 ``` mermaid
 
 flowchart LR
@@ -726,19 +727,17 @@ flowchart LR
     T1([tlsa_Exit
     tlsa_HHID
     tlsa_Enrollment
-     tlsa_ExitHoHAdult]) & H1[(hmis_Client)]-->T3([tlsa_Exit])
+    tlsa_ExitHoHAdult]) & H1[(hmis_Client)]-->T3([tlsa_Exit])
 
 	T1:::Temp
     T3:::Temp
 	H1:::HMIS
 
 	classDef Temp stroke:#FF5978, fill:#FFDFE5, color:#8E2236
-	classDef LSA stroke:#FBB35A, fill:#FFEFDB, color:#8F632D 
 	classDef HMIS stroke:#374D7C, fill:#E2EBFF, color:#374D7C
-    classDef Man stroke:#999999, fill:#EEEEEE, color:#000000
-    classDef Box stroke: #999, fill:none, color: #FFFFFF
 	
 ```
+
 As with the active cohort, population identifiers for exit cohort households are based on the characteristics of the head of household and any adult household members.
 
 The underlying logic is generally the same as that for the active cohort, but only data from the enrollment associated with the *HouseholdID* of the qualifying exit is used (as opposed to all enrollments active in the report period).
@@ -1037,7 +1036,7 @@ Specifically, this is the latest date in the most recent period of at least seve
 -   \[Date\] < tlsa\_Exit.**EntryDate**
 -   \[Date\] is not between a *BedNightDate* and (*BedNightDate* + 6 days); and
 -   \[Date\] is not between a tlsa\_HHID.**EntryDate** and the associated (**ExitDate** + 6 days) for project types other than ES nbn.
--   
+   
 # 7.12 Set SystemPath for LSAExit
 
 ``` mermaid
@@ -1045,7 +1044,6 @@ flowchart LR
 
 	T1([tlsa_Exit
     tlsa_HHID])-->	T2([tlsa_Exit])
-
 
 	T1:::Temp
     T2:::Temp
