@@ -435,4 +435,4 @@ Set LSAReport.**ReportDate** = the system date/time when all other data required
 
 # 11.9 LSAReport
 
-LSAReport has 32 columns; none may be NULL. See [LSA Data Dictionary - Files and Columns](LSA Data Dictionary - Columns.md#1---lsareport) for details.  
+LSAReport has 32 columns; none may be NULL. See [LSA Data Dictionary - Files and Columns](LSA Data Dictionary - Columns.md#1---lsareport) for file specifications.  

@@ -1141,24 +1141,5 @@ In tlsa\_Exit, **ReturnTime** is populated with actual counts of days because th
 | 547   | 366-547 days   | 366  | 547 |
 | 730   | 548-730 days   | 548  | 730 |
 
-All of the columns in LSAExit are integers; none may be NULL.
+All of the columns in LSAExit are integers; none may be NULL. See [LSA Data Dictionary - Files and Columns](LSA Data Dictionary - Columns.md#4---lsaexit) for file specifications.  
 
-| \#  | Column Name                           |
-|-----|---------------------------------------|
-| 1   | **RowTotal**                          |
-| 2   | **Cohort**                            |
-| 3   | **Stat**                              |
-| 4   | **ExitFrom**                          |
-| 5   | **ExitTo**                            |
-| 6   | **ReturnTime** (group as shown above) |
-| 7   | **HHType**                            |
-| 8   | **HHVet**                             |
-| 9   | **HHChronic**                         |
-| 10  | **HHDisability**                      |
-| 11  | **HHFleeingDV**                       |
-| 12  | **HoHRaceEthnicity**                  |
-| 14  | **HHAdultAge**                        |
-| 15  | **HHParent**                          |
-| 16  | **AC3Plus**                           |
-| 17  | **SystemPath**                        |
-| 18  | **ReportID**                          |
