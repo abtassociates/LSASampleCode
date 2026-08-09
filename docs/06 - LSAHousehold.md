@@ -1027,22 +1027,21 @@ RRH-SO enrollments are not relevant to **LastInactive**.
 -   \[Date\] is not between a *BedNightDate* and (*BedNightDate* + 6 days) for any enrollment – active or inactive -- in tlsa\_HHID where **ActiveHHType** = tlsa\_Household.**HHType**
     -   Note that a *BedNightDate* must be valid – i.e., >= **EntryDate** for the associated enrollment and < **ExitDate** if there is one – in order to be relevant. In systems that allow the creation of invalid bed night data, report code must exclude those records.
 -   \[Date\] is not between a tlsa\_HHID.**EntryDate** and the associated (**ExitDate** + 6 days) for any enrollment – active or inactive -- in tlsa\_HHID where **ActiveHHType** = tlsa\_Household.**HHType**
--   
+    
 # 6.13 Get Dates of Other System Use (sys_Time)
-```mermaid
+
+``` mermaid
 flowchart LR
 
 	T1([tlsa_HHID]) & T2([tlsa_Household]) & H1[(hmis_Services)]--> T4([sys_Time])
 
 	T1:::Temp
-  T2:::Temp
+  	T2:::Temp
 	T4:::Temp
-  H1:::HMIS
+  	H1:::HMIS
 
 	classDef Temp stroke:#FF5978, fill:#FFDFE5, color:#8E2236
-	classDef LSA stroke:#FBB35A, fill:#FFEFDB, color:#8F632D 
 	classDef HMIS stroke:#374D7C, fill:#E2EBFF, color:#374D7C
-    	classDef Man stroke:#999999, fill:#EEEEEE, color:#000000
 	
 ```
 ## Source
@@ -1350,20 +1349,20 @@ Set **PSHStatus** = 2 (Served in contiguous period prior to report start only) w
 
 -   **PSHStatus** = 0 and
 -   Any record in sys\_Time for the **HoHID**/**HHType** has a **sysStatus** = 5
+-   
 # 6.17 Set EST/RRH/PSHAIR
-```mermaid
+
+``` mermaid
 flowchart LR
 
 	T4([tlsa_Household
-  tlsa_HHID])  -->T3([tlsa_Household])
+  	tlsa_HHID])  -->T3([tlsa_Household])
 
-  T3:::Temp
+  	T3:::Temp
 	T4:::Temp
 
 
 	classDef Temp stroke:#FF5978, fill:#FFDFE5, color:#8E2236
-	classDef LSA stroke:#FBB35A, fill:#FFEFDB, color:#8F632D 
-	classDef HMIS stroke:#374D7C, fill:#E2EBFF, color:#374D7C
 	
 ```
 The EST/RRH/PSHAIR columns identify households active in residence during the report period. RRH-SO enrollments are not relevant to AIR status.
