@@ -341,7 +341,7 @@ last_modified_date: 2026-08-01
 
 - [10.21 LSACalculated](10 - LSACalculated Data Quality Counts.md#1021-lsacalculated)
 
-[11 - HMIS Business Logic - LSAReport Data Quality and ReportDate.md](11 - LSAReport Data Quality and ReportDate.md)
+[11 - HMIS Business Logic - LSAReport Data Quality and ReportDate.md](11 - LSAReport.md)
 
 - [11.1 Data Quality: HMIS Household Enrollments Not Associated with a CoC](11 - LSAReport.md#111-data-quality-hmis-household-enrollments-not-associated-with-a-coc)
    - [NoCoC](11 - LSAReport.md#nococ)
