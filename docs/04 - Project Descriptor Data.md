@@ -466,7 +466,7 @@ Populate **ExportID** with LSAReport.**ReportID***;* the data type for **ExportI
 
 flowchart LR
 
-	P[[lsa_Project]]-->HF[(hmis_Affiliation)]-->LF[[lsa_HMISParticipation]]
+	P[[lsa_Project]]-->HF[(hmis_Affiliation)]-->LF[[lsa_Affiliation]]
 
 	P:::LSA
 	HF:::HMIS
