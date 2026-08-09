@@ -617,8 +617,8 @@ Each record in ch\_Episodes\_exit represents an uninterrupted series of ES/SH/St
 -   **episodeEnd** is the first **ESSHStreetDate** after **episodeStart** where (**ESSHStreetDate** + 1 day) does not exist
 -   
 # 7.8 CHTime and CHTimeStatus for Exit Cohorts
-``` mermaid
 
+``` mermaid
 flowchart LR
 
 	T1([ch_Episodes_exit
@@ -629,10 +629,8 @@ flowchart LR
 	H1:::HMIS
 
 	classDef Temp stroke:#FF5978, fill:#FFDFE5, color:#8E2236
-	classDef LSA stroke:#FBB35A, fill:#FFEFDB, color:#8F632D 
+
 	classDef HMIS stroke:#374D7C, fill:#E2EBFF, color:#374D7C
-    	classDef Man stroke:#999999, fill:#EEEEEE, color:#000000
-	classDef Box stroke: #999, fill:none, color: #000000
 	
 ```
 ## Source
@@ -1011,8 +1009,8 @@ flowchart LR
 
 ## Target
 
-| **sys\_TimePadded\_exit** | **Column Description**                                                                                                                                                                                                             |
-| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **sys\_TimePadded\_exit** | **Column Description** |                                                       
+|--|--|
 | Cohort                    | From tlsa\_Exit                                                                                                                                                                                                                    |
 | HoHID                     | From tlsa\_Exit                                                                                                                                                                                                                    |
 | HHType                    | From tlsa\_Exit                                                                                                                                                                                                                    |
@@ -1037,6 +1035,7 @@ Specifically, this is the latest date in the most recent period of at least seve
 -   \[Date\] is not between a tlsa\_HHID.**EntryDate** and the associated (**ExitDate** + 6 days) for project types other than ES nbn.
 -   
 # 7.12 Set SystemPath for LSAExit
+
 ``` mermaid
 flowchart LR
 
@@ -1050,6 +1049,7 @@ flowchart LR
 	classDef Temp stroke:#FF5978, fill:#FFDFE5, color:#8E2236
 
 ```
+
 ## Source
 
 | **tlsa_Exit**      |
@@ -1112,6 +1112,7 @@ For all other records in tlsa\_Exit, set **SystemPath** based on the combination
 | 12         | All other combinations   |                                       |
 
 # 7.13 LSAExit
+
 ``` mermaid
 flowchart LR 
     T1([lsa_Exit]) -->
@@ -1123,9 +1124,9 @@ flowchart LR
 
     classDef Temp stroke:#FF5978, fill:#FFDFE5, color:#8E2236
 	classDef LSA stroke:#FBB35A, fill:#FFEFDB, color:#8F632D 
-	classDef HMIS stroke:#374D7C, fill:#E2EBFF, color:#374D7C
-	classDef Box stroke:#999, fill:none, color:#FFFFFF 
+
 ```
+
 LSAExit includes 17 columns. **RowTotal** is a count of distinct combinations of **Cohort, HoHID** and **HHType** from tlsa\_Exit, grouped by the values in all other columns.
 
 In tlsa\_Exit, **ReturnTime** is populated with actual counts of days because they are needed to generate averages for LSACalculated. For export, the actual counts are grouped into categories as shown below.
