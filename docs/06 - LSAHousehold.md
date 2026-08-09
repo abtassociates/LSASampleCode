@@ -1281,7 +1281,7 @@ Set **SystemDaysNotPSHHoused**\= count of distinct **sysDate**s in sys\_Time whe
 
 This is the total number of days housed in PSH for active enrollments.
 
-Set **PSHHHousedDays** = count of distinct **sysDate**s in sys\_Time where **sysStatus** = 1 and **HoHID/HHType** \= tlsa\_Household **HoHID/HHType.**
+Set **PSHHousedDays** = count of distinct **sysDate**s in sys\_Time where **sysStatus** = 1 and **HoHID/HHType** \= tlsa\_Household **HoHID/HHType.**
 
 ### Other3917Days
 
