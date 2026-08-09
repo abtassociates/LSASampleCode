@@ -683,7 +683,7 @@ There are a total of nine valid combinations of **CHTime** and **CHTimeStatus** 
 | -- | 270 | 99 | Client has a total of 270-364 ESSHStreet days and relevant data is missing from *3.917 Living Situation* |
 | -- | 270 | -1 | Client has a total of 270-364 ESSHStreet days and is not missing any relevant *3.917 Living Situation* data |
 | -- | 0 | 99 | Client has a total of 0-269 ESSHStreet days and relevant data is missing from *3.917 Living Situation* |
-| -- | 0 | -1 | Client has a total of 270-364 ESSHStreet days and is not missing any relevant *3.917 Living Situation* data |
+| -- | 0 | -1 | Client has a total of 0-269 ESSHStreet days and is not missing any relevant *3.917 Living Situation* data |
 
 The conditions associated with valid combinations of **CHTime** and **CHTimeStatus** are not all mutually exclusive. **CHTime** and **CHTimeStatus** should be set for the first set of criteria met by records for each person.
 
