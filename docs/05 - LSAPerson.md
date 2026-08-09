@@ -638,9 +638,6 @@ flowchart LR
 
 	classDef Temp stroke:#FF5978, fill:#FFDFE5, color:#8E2236
 	classDef LSA stroke:#FBB35A, fill:#FFEFDB, color:#8F632D 
-	classDef HMIS stroke:#374D7C, fill:#E2EBFF, color:#374D7C
-    	classDef Man stroke:#999999, fill:#EEEEEE, color:#000000
-	classDef Box stroke: #999, fill:none, color: #FFFFFF
 	
 ```
 ## Source
@@ -683,6 +680,7 @@ To resolve potential data conflicts, dates on which a client is enrolled in TH o
 # 5.8 Get Dates to Include in Counts of ES/SH/Street Days (ch_Include)
 
 ``` mermaid
+
 flowchart LR
 	T1([tlsa_Person
 	tlsa_Enrollment]) -->
@@ -696,11 +694,10 @@ flowchart LR
 	
 
 	classDef Temp stroke:#FF5978, fill:#FFDFE5, color:#8E2236
-	classDef LSA stroke:#FBB35A, fill:#FFEFDB, color:#8F632D 
 	classDef HMIS stroke:#374D7C, fill:#E2EBFF, color:#374D7C
-    classDef Man stroke:#999999, fill:#EEEEEE, color:#000000
-	classDef Box stroke: #999, fill:none, color: #FFFFFF
+
 ```
+
 ## Source
 
 | **tlsa_Person**                                          |
@@ -805,10 +802,7 @@ flowchart LR
 	T2:::Temp
 	
 	classDef Temp stroke:#FF5978, fill:#FFDFE5, color:#8E2236
-	classDef LSA stroke:#FBB35A, fill:#FFEFDB, color:#8F632D 
-	classDef HMIS stroke:#374D7C, fill:#E2EBFF, color:#374D7C
-    	classDef Man stroke:#999999, fill:#EEEEEE, color:#000000
-	classDef Box stroke: #999, fill:none, color: #FFFFFF
+
 ```
 
 ## Source
