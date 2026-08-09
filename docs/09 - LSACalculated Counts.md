@@ -20,7 +20,7 @@ last_modified_date: 2026-07-30
 |  54 | Project-type – Households by household characteristics  | [Section 9.3](#93-counts-of-people-and-households-by-project-and-household-characteristics) |
 |  55 | Project level – People by personal characteristic       | [Section 9.4](#94-get-counts-of-people-by-project-and-personal-characteristics) |
 |  55 | Project-type – People by personal characteristic        | [Section 9.4](#94-get-counts-of-people-by-project-and-personal-characteristics) |
-|  56 | Project-level – Bed nights by household characteristics | [Section 9.4](#94-get-counts-of-people-by-project-and-personal-characteristics) |
+|  56 | Project-level – Bed nights by household characteristics | [Section 9.5](#95-get-counts-of-bednights) |
 |  56 | Project-type – Bed nights by household characteristics  | [Section 9.5](#95-get-counts-of-bednights) |
 |  57 | Project-level – Bed nights by personal characteristics  | [Section 9.5](#95-get-counts-of-bednights) |
 |  57 | Project-type – Bed nights by personal characteristics   | [Section 9.5](#95-get-counts-of-bednights) |
