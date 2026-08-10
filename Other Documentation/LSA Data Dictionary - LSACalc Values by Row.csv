@@ -124,3 +124,4 @@ DQ Counts,,,,,,,
 918,DQ – Months ES/SH/Street Homeless Last 3 Years,1,10,-1,Not NULL ,0,0
 919,DQ – Destination ,1,10,-1,Not NULL ,0,0
 920,DQ – Date of Birth,1,10,-1,Not NULL,0,0
+921,DQ – NBN No Bed Nights,1,10,-1,Not NULL,0,0
