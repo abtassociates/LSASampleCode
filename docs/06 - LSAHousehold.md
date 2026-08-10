@@ -861,7 +861,7 @@ flowchart LR
 
 | **tlsa\_Household**  | **Column Description**                                                                                                                                                                                                                                                                                                                                              |
 | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **RRHPreMoveInDays** | Counts of actual days are set in tlsa\_Household; counts of active households are grouped by ranges – e.g., ‘1-7 days’, ‘8-30 days’, etc. – in the corresponding **LSAHousehold** column. Averages based on the counts of actual days are inserted to LSACalculated. (See section [8.4 Get Average Days for Length of Time in RRH Projects](08 LSACalculated Averages.md#84-get-average-days-for-length-of-time-homeless)).) |
+| **RRHPreMoveInDays** | Counts of actual days are set in tlsa\_Household; counts of active households are grouped by ranges – e.g., ‘1-7 days’, ‘8-30 days’, etc. – in the corresponding **LSAHousehold** column. Averages based on the counts of actual days are inserted to LSACalculated. (See section [8.4 Get Average Days for Length of Time in RRH Projects](08 LSACalculated Averages.md#84-get-average-days-for-length-of-time-homeless).) |
 
 ## Logic
 
@@ -952,7 +952,7 @@ For each **HoHID**/**HHType** in tlsa\_Household, create a record with a **sysSt
   
 ### Dates Housed in RRH 
 
-Dates housed in RRH are counted only for active enrollments. As noted in section 3.3 ([HMIS Data Requirements and Assumptions](03 Core Concepts and Data Universe.md#hmis-data-requirements-and-assumptions)) and reflected in the criteria listed below, the *MoveInDate* for an RRH enrollment is counted as a date housed even if it is equal to the *ExitDate*.
+Dates housed in RRH are counted only for active enrollments. As noted in section 3.3 [HMIS Data Requirements and Assumptions](03 - Core Concepts and Data Universe.md#hmis-data-requirements-and-assumptions) and reflected in the criteria listed below, the *MoveInDate* for an RRH enrollment is counted as a date housed even if it is equal to the *ExitDate*.
 
 For each **HoHID**/**HHType** in tlsa\_Household, create a record with a **sysStatus** = 2 in sys\_Time for any \[Date\] <= <u>ReportEnd</u> where:
 
