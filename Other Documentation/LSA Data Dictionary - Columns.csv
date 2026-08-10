@@ -19,6 +19,7 @@
 1,LSAReport,18,ClientEntry,int,,0,A count of distinct HMIS EnrollmentIDs for the active cohort with enrollment dates that fall within the report period.   ,,10
 1,LSAReport,19,AdultHoHEntry,int,,0,A count of distinct HMIS EnrollmentIDs for adults and heads of household in the active cohort with enrollment dates that fall within the report period.   ,,10
 1,LSAReport,20,ClientExit,int,,0,A count of distinct HMIS EnrollmentIDs for the active cohort with an exit date within the report period.   ,,10
+1,LSAReport,21,SSN4Digit,int,,0,"The total number of PersonalIDs reported in LSAPerson where the value for SSNDataQuality is ‘Approximate or partial SSN collected’ (2), the first five characters of SSN are all x and/or X, and the last 4 are a combination of digits other than ‘0000’.",,10
 1,LSAReport,21,SSNNotProvided,int,,0,"The total number of PersonalIDs reported in LSAPerson where: 
 • The client was active in ReportCoC during the report period; and 
 • The value for SSNDataQuality is Client doesn’t know (8) or Client refused (9).
@@ -110,7 +111,7 @@
 3,LSAPerson,1,RowTotal,int,,0,"The total number of people served in continuum ES, SH, TH, RRH, and/or PSH projects during the report period with the characteristics represented by the values in each column of the row. All values must be integers > 0. ",,10
 3,LSAPerson,2,RaceEthnicity,int,6,0,Race and Ethnicity for all persons,,7
 3,LSAPerson,3,VetStatus,int,20,0,Veteran Status for adults; not applicable (value = -1) for children,,2
-3,LSAPerson,4,DisabilityStatus,int,46,0,Disability Status  for adults and heads of household based on records of 3.08 Disabling Condition for all active enrollments; not applicable (value = -1) for non-HoH children.  ,,2
+3,LSAPerson,4,DisabilityStatus,int,20,0,Disability Status  for adults and heads of household based on records of 3.08 Disabling Condition for all active enrollments; not applicable (value = -1) for non-HoH children.  ,,2
 3,LSAPerson,5,CHTime,int,21,0,"For adults and heads of household, the total number of days in ES/SH or on the street in the three years prior to the client's last active date in the report period.  Based on data from active and inactive enrollments, the count of days excludes any time enrolled in continuum TH projects or housed in RRH/PSH, but otherwise includes:
 - Dates between entry and exit in continuum entry-exit ES and SH projects; and
 - Bed-night dates in night-by-night shelters; and
