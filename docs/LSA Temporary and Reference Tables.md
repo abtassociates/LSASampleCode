@@ -114,59 +114,59 @@ Business logic associated with populating tlsa_Enrollment is in section [3.4 HMI
 | DVStatus | int | (Section 5.4 - DVStatus)[05 - LSAPerson.md#dvstatus] |
 | ESTAgeMin | int | (Section 5.11 - AgeMin and AgeMax)[05 - LSAPerson#511-estrrhpshrrhsoagemin-and-estrrhpshrrhsoagemax--lsaperson] |
 | ESTAgeMax | int | (Section 5.11 - AgeMin and AgeMax)[05 - LSAPerson#511-estrrhpshrrhsoagemin-and-estrrhpshrrhsoagemax--lsaperson] |
-| HHTypeEST | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types---lsaperson] |
-| HoHEST | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types---lsaperson] |
-| AdultEST | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types---lsaperson] |
-| AIRAdultEST | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types---lsaperson] |
-| HHChronicEST | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types---lsaperson] |
-| HHVetEST | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types---lsaperson] |
-| HHDisabilityEST | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types---lsaperson] |
-| HHFleeingDVEST | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types---lsaperson] |
-| HHAdultAgeAOEST | int | (Section 5.14 - Adult Age Population Identifiers)[05 - LSAPerson.md#514-adult-age-population-identifiers---lsaperson] |
-| HHAdultAgeACEST | int | (Section 5.14 - Adult Age Population Identifiers)[05 - LSAPerson.md#514-adult-age-population-identifiers---lsaperson] |
-| HHParentEST | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types---lsaperson] |
-| AC3PlusEST | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types---lsaperson] |
-| AIREST | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types---lsaperson] |
-| AIRHoHEST | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types---lsaperson] |
+| HHTypeEST | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types--lsaperson] |
+| HoHEST | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types--lsaperson] |
+| AdultEST | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types--lsaperson] |
+| AIRAdultEST | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types--lsaperson] |
+| HHChronicEST | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types--lsaperson] |
+| HHVetEST | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types--lsaperson] |
+| HHDisabilityEST | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types--lsaperson] |
+| HHFleeingDVEST | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types--lsaperson] |
+| HHAdultAgeAOEST | int | (Section 5.14 - Adult Age Population Identifiers)[05 - LSAPerson.md#514-adult-age-population-identifiers--lsaperson] |
+| HHAdultAgeACEST | int | (Section 5.14 - Adult Age Population Identifiers)[05 - LSAPerson.md#514-adult-age-population-identifiers--lsaperson] |
+| HHParentEST | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types--lsaperson] |
+| AC3PlusEST | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types--lsaperson] |
+| AIREST | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types--lsaperson] |
+| AIRHoHEST | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types--lsaperson] |
 | RRHAgeMin | int | (Section 5.11 - AgeMin and AgeMax)[05 - LSAPerson#511-estrrhpshrrhsoagemin-and-estrrhpshrrhsoagemax--lsaperson] |
 | RRHAgeMax | int | (Section 5.11 - AgeMin and AgeMax)[05 - LSAPerson#511-estrrhpshrrhsoagemin-and-estrrhpshrrhsoagemax--lsaperson] |
-| HHTypeRRH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types---lsaperson]  |
-| HoHRRH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types---lsaperson]  |
-| AdultRRH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types---lsaperson]  |
-| AIRAdultRRH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types---lsaperson]  |
-| HHChronicRRH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types---lsaperson]  |
-| HHVetRRH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types---lsaperson]  |
-| HHDisabilityRRH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types---lsaperson]  |
-| HHFleeingDVRRH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types---lsaperson]  |
-| HHAdultAgeAORRH | int | (Section 5.14 - Adult Age Population Identifiers)[05 - LSAPerson.md#514-adult-age-population-identifiers---lsaperson] |
-| HHAdultAgeACRRH | int | (Section 5.14 - Adult Age Population Identifiers)[05 - LSAPerson.md#514-adult-age-population-identifiers---lsaperson] |
-| HHParentRRH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types---lsaperson]  |
-| AC3PlusRRH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types---lsaperson]  |
-| AIRRRH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types---lsaperson]  |
-| AIRHoHRRH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types---lsaperson]  |
+| HHTypeRRH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types--lsaperson]  |
+| HoHRRH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types--lsaperson]  |
+| AdultRRH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types--lsaperson]  |
+| AIRAdultRRH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types--lsaperson]  |
+| HHChronicRRH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types--lsaperson]  |
+| HHVetRRH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types--lsaperson]  |
+| HHDisabilityRRH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types--lsaperson]  |
+| HHFleeingDVRRH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types--lsaperson]  |
+| HHAdultAgeAORRH | int | (Section 5.14 - Adult Age Population Identifiers)[05 - LSAPerson.md#514-adult-age-population-identifiers--lsaperson] |
+| HHAdultAgeACRRH | int | (Section 5.14 - Adult Age Population Identifiers)[05 - LSAPerson.md#514-adult-age-population-identifiers--lsaperson] |
+| HHParentRRH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types--lsaperson]  |
+| AC3PlusRRH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types--lsaperson]  |
+| AIRRRH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types--lsaperson]  |
+| AIRHoHRRH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types--lsaperson]  |
 | PSHAgeMin | int | (Section 5.11 - AgeMin and AgeMax)[05 - LSAPerson#511-estrrhpshrrhsoagemin-and-estrrhpshrrhsoagemax--lsaperson] |
 | PSHAgeMax | int | (Section 5.11 - AgeMin and AgeMax)[05 - LSAPerson#511-estrrhpshrrhsoagemin-and-estrrhpshrrhsoagemax--lsaperson] |
-| HHTypePSH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types---lsaperson]  |
-| HoHPSH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types---lsaperson]  |
-| AdultPSH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types---lsaperson]  |
-| AIRAdultPSH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types---lsaperson]  |
-| HHChronicPSH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types---lsaperson]  |
-| HHVetPSH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types---lsaperson]  |
-| HHDisabilityPSH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types---lsaperson]  |
-| HHFleeingDVPSH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types---lsaperson]  |
-| HHAdultAgeAOPSH | int | (Section 5.14 - Adult Age Population Identifiers)[05 - LSAPerson.md#514-adult-age-population-identifiers---lsaperson] |
-| HHAdultAgeACPSH | int | (Section 5.14 - Adult Age Population Identifiers)[05 - LSAPerson.md#514-adult-age-population-identifiers---lsaperson] |
-| HHParentPSH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types---lsaperson]  |
-| AC3PlusPSH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types---lsaperson]  |
-| AIRPSH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types---lsaperson]  |
-| AIRHoHPSH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types---lsaperson]  |
+| HHTypePSH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types--lsaperson]  |
+| HoHPSH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types--lsaperson]  |
+| AdultPSH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types--lsaperson]  |
+| AIRAdultPSH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types--lsaperson]  |
+| HHChronicPSH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types--lsaperson]  |
+| HHVetPSH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types--lsaperson]  |
+| HHDisabilityPSH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types--lsaperson]  |
+| HHFleeingDVPSH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types--lsaperson]  |
+| HHAdultAgeAOPSH | int | (Section 5.14 - Adult Age Population Identifiers)[05 - LSAPerson.md#514-adult-age-population-identifiers--lsaperson] |
+| HHAdultAgeACPSH | int | (Section 5.14 - Adult Age Population Identifiers)[05 - LSAPerson.md#514-adult-age-population-identifiers--lsaperson] |
+| HHParentPSH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types--lsaperson]  |
+| AC3PlusPSH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types--lsaperson]  |
+| AIRPSH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types--lsaperson]  |
+| AIRHoHPSH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types--lsaperson]  |
 | RRHSOAgeMin | int | (Section 5.11 - AgeMin and AgeMax)[05 - LSAPerson#511-estrrhpshrrhsoagemin-and-estrrhpshrrhsoagemax--lsaperson] |
 | RRHSOAgeMax | int | (Section 5.11 - AgeMin and AgeMax)[05 - LSAPerson#511-estrrhpshrrhsoagemin-and-estrrhpshrrhsoagemax--lsaperson] |
-| HHTypeRRHSONoMI | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types---lsaperson]  |
-| HHTypeRRHSOMI | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types---lsaperson]  |
-| HHTypeES | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types---lsaperson]  |
-| HHTypeSH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types---lsaperson]  |
-| HHTypeTH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types---lsaperson]  |
+| HHTypeRRHSONoMI | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types--lsaperson]  |
+| HHTypeRRHSOMI | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types--lsaperson]  |
+| HHTypeES | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types--lsaperson]  |
+| HHTypeSH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types--lsaperson]  |
+| HHTypeTH | int | (Section 5.13 - Project Group and Population Household Types)[05 - LSAPerson.md#513-project-group-and-population-household-types--lsaperson]  |
 | HIV | int | (Section 5.4 - HIV)[05 - LSAPerson.md#hiv] |
 | SMI | int | (Section 5.4 - SMI)[05 - LSAPerson.md#smi] |
 | SUD | int | (Section 5.4 - SUD)[05 - LSAPerson.md#sud] |
