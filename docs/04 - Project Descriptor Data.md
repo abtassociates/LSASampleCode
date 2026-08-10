@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "4 - HMIS Business Logic: Project Descriptor Data for Export"
+title: "4 - Project Descriptor Data for Export"
 nav_order: 5
 parent: "LSA Programming Specifications"
 has_toc: true
