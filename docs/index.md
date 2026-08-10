@@ -25,7 +25,8 @@ last_modified_date: 2026-08-01
 - [2.7 Affiliation.csv](02 - HDX Upload.md#27-affiliationcsv)
 - [2.8 LSAReport.csv](02 - HDX Upload.md#28-lsareportcsv)
 - [2.9 LSAPerson.csv](02 - HDX Upload.md#29-lsapersoncsv)
-- [2.10 LSAHousehold.csv](02 - HDX Upload.md#210-lsahouseholdcsv)
+- [2.11 LSAExit.csv](02 - HDX Upload.md#211-lsaexitcsv)
+- [2.12 LSACalculated.csv](02 - HDX Upload.md#212-lsacalculatedcsv)
 
 [3 - Core Concepts and Data Universe](03 - Core Concepts and Data Universe.md)
 
