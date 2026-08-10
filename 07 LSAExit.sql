@@ -14,6 +14,8 @@ Relevant Sections:
 7.1 Identify Qualifying Exits in Exit Cohort Periods
 */
 
+truncate table tlsa_Exit
+
 if (select LSAScope from lsa_Report) <> 3
 begin
 
@@ -39,7 +41,6 @@ begin
 /*
 	7.2 Select Reportable Exits
 */
-	truncate table tlsa_Exit
 
 	insert into tlsa_Exit (Cohort, HoHID, HHType, ReportID, Step)
 	select distinct hhid.ExitCohort, hhid.HoHID

@@ -33,10 +33,10 @@ Relevant Sections:
 	6.1 Get Unique Households and Population Identifiers for tlsa_Household
 */
 
+truncate table tlsa_Household
+
 if (select LSAScope from lsa_Report) <> 3
 begin
-
-	truncate table tlsa_Household
 
 	insert into tlsa_Household (HoHID, HHType
 		, HHChronic, HHVet, HHDisability, HHFleeingDV
