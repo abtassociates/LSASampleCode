@@ -861,7 +861,7 @@ flowchart LR
 
 | **tlsa\_Household**  | **Column Description**                                                                                                                                                                                                                                                                                                                                              |
 | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **RRHPreMoveInDays** | Counts of actual days are set in tlsa\_Household; counts of active households are grouped by ranges – e.g., ‘1-7 days’, ‘8-30 days’, etc. – in the corresponding **LSAHousehold** column. Averages based on the counts of actual days are inserted to LSACalculated. (See section [8.4 Get Average Days for Length of Time in RRH Projects](08 LSACalculated Averages.md#84-get-average-days-for-length-of-time-homeless).) |
+| **RRHPreMoveInDays** | Counts of actual days are set in tlsa\_Household; counts of active households are grouped by ranges – e.g., ‘1-7 days’, ‘8-30 days’, etc. – in the corresponding **LSAHousehold** column. Averages based on the counts of actual days are inserted to LSACalculated. (See section [8.4 Get Average Days for Length of Time in RRH Projects](08 - LSACalculated Averages.md#84-get-average-days-for-length-of-time-homeless).) |
 
 ## Logic
 
