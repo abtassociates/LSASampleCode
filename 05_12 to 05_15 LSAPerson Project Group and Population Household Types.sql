@@ -24,7 +24,7 @@ Relevant Sections:
 					or (lp.CHTime = 400 and lp.CHTimeStatus = 2))
 					and lp.DisabilityStatus = 1 then 1
 				when lp.CHTime in (365, 400) and lp.DisabilityStatus = 1 then 2
-				when lp.CHTime in (365, 400) and lp.DisabilityStatus = 99 then 3
+				when lp.CHTime in (365, 400) and lp.DisabilityStatus in (98,99) then 3
 				when lp.CHTime in (365, 400) and lp.DisabilityStatus = 0 then 4
 				when lp.CHTime = 270 and lp.DisabilityStatus = 1 and lp.CHTimeStatus = 99 then 5
 				when lp.CHTime = 270 and lp.DisabilityStatus = 1 and lp.CHTimeStatus <> 99 then 6
