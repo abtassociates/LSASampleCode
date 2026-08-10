@@ -14,7 +14,7 @@ This repository hosts programming specifications, sample code, and sample data s
 
 ## Specifications
 
-A working version of the programming specifications is maintained in markdown files in the /docs folder of this repository.  The current version is hosted on GitHub pages at [https://hmis.github.io/LSASampleCode/](https://hmis.github.io/LSASampleCode/). 
+A working version of the programming specifications is maintained in markdown files in the /docs folder of this repository.  The current version is hosted on GitHub pages at [https://abtassociates.github.io/LSASampleCode/](https://abtassociates.github.io/LSASampleCode/). 
 
 ## Code
 
