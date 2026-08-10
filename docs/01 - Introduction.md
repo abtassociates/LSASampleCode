@@ -87,7 +87,31 @@ This document is comprehensive with respect to the business logic for the LSA up
 
 Throughout this document, descriptions of business logic reference diverse types of data – HMIS fields, report parameters, derived variables, intermediate data constructs, etc. – and many have similar (or identical) names.
 
-To help clarify, many sections include simple graphics to illustrate the flow of the process. Text formatting of variable/field/column names indicates their context. The conventions used are:
+To help clarify, many sections include simple graphics to illustrate the flow of the process. 
+
+``` mermaid
+flowchart LR
+
+	T1([Temporary tables / 
+  intermediate data constructs]) ~~~
+  L1[[LSA output tables]] ~~~
+  H1[(HMIS tables)] 
+  M1[/User input
+  Hard-coded values /]
+
+	T1:::Temp
+  L1:::LSA
+	H1:::HMIS
+  M1:::Man
+
+	classDef Temp stroke:#FF5978, fill:#FFDFE5, color:#8E2236
+	classDef LSA stroke:#FBB35A, fill:#FFEFDB, color:#8F632D 
+	classDef HMIS stroke:#374D7C, fill:#E2EBFF, color:#374D7C
+  classDef Man stroke:#999999, fill:#EEEEEE, color:#000000
+	
+```
+
+Text formatting of variable/field/column names indicates their context. The conventions used are:
 
 | Example         | Description                                                                                                                                                                                                                                                                                                |
 | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
