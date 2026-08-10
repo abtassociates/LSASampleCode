@@ -477,7 +477,7 @@ flowchart LR
 	classDef HMIS stroke:#374D7C, fill:#E2EBFF, color:#374D7C
 	
 ```
-Records exported to Alliliation.csv are included in the LSA output and uploaded to HDX 2.0.
+Records exported to Affiliation.csv are included in the LSA output and uploaded to HDX 2.0.
 
 LSA business logic does not utilize Affiliation data beyond the export of records.
 ## Source
