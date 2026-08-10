@@ -3,6 +3,7 @@ layout: default
 title: "LSA Programming Specifications"
 nav_order: 1
 has_children: true
+has_toc: false
 last_modified_date: 2026-08-01
 ---
 
