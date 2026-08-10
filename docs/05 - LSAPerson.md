@@ -1114,7 +1114,7 @@ Based on records in tlsa\_Enrollment with the same **HouseholdID** where **Activ
 
 | Value | Criteria                                                                                                                   | Category                                              |
 | ----- | -------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
-| **1** | **DisabilityStatus** = 1 and: -   **CHTime** = 365 and **CHTimeStatus** in (1,2); or -   CHTime = 400 and CHTimeStatus = 2 | Chronically Homeless                                  |
+| **1** | **DisabilityStatus** = 1 and: <br> - **CHTime** = 365 and **CHTimeStatus** in (1,2); or <br> - **CHTime** = 400 and **CHTimeStatus** = 2 | Chronically Homeless                                  |
 | **2** | **CHTime** in (365, 400) and **DisabilityStatus** \= 1                                                                     | Long-Term Homeless with Disability                    |
 | **3** | **CHTime** in (365, 400) and **DisabilityStatus** = 99                                                                     | Long-Term Homeless Missing Disability Info            |
 | **4** | **CHTime** in (365, 400) and **DisabilityStatus** = 0                                                                      | Long-Term Homeless without Disability                 |
