@@ -626,7 +626,7 @@ flowchart LR
 
 ## Logic
 
-See section [3.3 HMIS Household Enrollments]([03 - Core Concepts and Data Universe.md#exitdest)) for logic associated with setting destination for individual enrollments.
+See section [3.3 HMIS Household Enrollments](03 - Core Concepts and Data Universe.md#exitdest) for logic associated with setting destination for individual enrollments.
 
 Set **xDestination** = -1 for households not served in project group and households enrolled in project group at <u>ReportEnd</u> (**xStatus** not in (12,22)).
 
