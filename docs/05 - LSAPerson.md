@@ -1110,7 +1110,7 @@ flowchart LR
 
 Limited to active household members (those with records in tlsa\_Enrollment with the same **HouseholdID** where **Active** = 1):
 
-Based on records in tlsa\_Enrollment with the same **HouseholdID** where **Active** = 1, set **HHChronic** to the first value in the table below for which any adult or HoH meets the criteria:
+Based on records in tlsa\_Person, set **HHChronic** to the first value in the table below for which any adult or HoH meets the criteria:
 
 | Value | Criteria                                                                                                                   | Category                                              |
 | ----- | -------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
