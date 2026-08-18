@@ -376,7 +376,11 @@ Relevant Sections:
 	left outer join hmis_Exit x on x.EnrollmentID = n.EnrollmentID 
 		and x.DateDeleted is null 
 	left outer join hmis_Services bn on bn.EnrollmentID = n.EnrollmentID and bn.RecordType = 200
-		and bn.DateProvided between n.EntryDate and coalesce(dateadd(dd, -1, x.ExitDate), rpt.ReportEnd)
+		and bn.DateProvided between n.EntryDate
+			and case when x.ExitDate is null then rpt.ReportEnd
+					 when dateadd(dd, -1, x.ExitDate) <= rpt.ReportEnd then dateadd(dd, -1, x.ExitDate)
+					 else rpt.ReportEnd
+				end
 		and bn.DateDeleted is NULL
 	where (x.ExitDate is null or (x.ExitDate >= rpt.ReportStart and x.ExitDate > n.EntryDate))
 		and bn.EnrollmentID is null
