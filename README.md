@@ -12,6 +12,8 @@ The Longitudinal System Analysis (LSA) is:
 
 This repository hosts programming specifications, sample code, and sample data specific to the LSA. Its purpose is to provide a space for reconciling the LSA specifications with HMIS data to produce accurate reporting.
 
+See [CHANGELOG.md](CHANGELOG.md) for recent updates to the sample code and sample data.
+
 ## Specifications
 
 A working version of the programming specifications is maintained in markdown files in the /docs folder of this repository.  The current version is hosted on GitHub pages at [https://abtassociates.github.io/LSASampleCode/](https://abtassociates.github.io/LSASampleCode/). 
