@@ -20,27 +20,27 @@
 1,LSAReport,19,AdultHoHEntry,int,,0,A count of distinct HMIS EnrollmentIDs for adults and heads of household in the active cohort with enrollment dates that fall within the report period.   ,,10
 1,LSAReport,20,ClientExit,int,,0,A count of distinct HMIS EnrollmentIDs for the active cohort with an exit date within the report period.   ,,10
 1,LSAReport,21,SSN4Digit,int,,0,"The total number of PersonalIDs reported in LSAPerson where the value for SSNDataQuality is ‘Approximate or partial SSN collected’ (2), the first five characters of SSN are all x and/or X, and the last 4 are a combination of digits other than ‘0000’.",,10
-1,LSAReport,21,SSNNotProvided,int,,0,"The total number of PersonalIDs reported in LSAPerson where: 
+1,LSAReport,22,SSNNotProvided,int,,0,"The total number of PersonalIDs reported in LSAPerson where: 
 • The client was active in ReportCoC during the report period; and 
 • The value for SSNDataQuality is Client doesn’t know (8) or Client refused (9).
 ",,10
-1,LSAReport,22,SSNMissingOrInvalid,int,,0,"The total number of PersonalIDs reported in LSAPerson where: 
+1,LSAReport,23,SSNMissingOrInvalid,int,,0,"The total number of PersonalIDs reported in LSAPerson where: 
 • The client was active in ReportCoC during the report period; and 
 • The value for SSNDataQuality is NOT Client doesn’t know (8) or Client refused (9); and
 • The value for SSN is the system default value (if any) for missing SSN, or the value is not valid per SSA guidelines.",,10
-1,LSAReport,23,ClientSSNNotUnique,int,,0,"The total number of PersonalIDs reported in LSAPerson where: 
+1,LSAReport,24,ClientSSNNotUnique,int,,0,"The total number of PersonalIDs reported in LSAPerson where: 
 • The client was active in ReportCoC during the report period; and
 • There is at least one record for a different PersonalID with the same value for SSN, excluding the system default value (if any) for missing SSN.",,10
-1,LSAReport,24,DistinctSSNValueNotUnique,int,,0,"The total number of distinct SSN values, excluding the system default value (if any) for missing SSN, that are associated with PersonalIDs reported in LSAPerson; and
+1,LSAReport,25,DistinctSSNValueNotUnique,int,,0,"The total number of distinct SSN values, excluding the system default value (if any) for missing SSN, that are associated with PersonalIDs reported in LSAPerson; and
 • The distinct SSN value is shared by one or more PersonalIDs.  
 ",,10
-1,LSAReport,25,DisablingCond,int,,0,A count of distinct HMIS EnrollmentIDs with missing or invalid values for DisablingCondition ,,10
-1,LSAReport,26,LivingSituation,int,,0,A count of distinct HMIS EnrollmentIDs with missing or invalid values for LivingSituation ,,10
-1,LSAReport,27,LengthOfStay,int,,0,A count of distinct HMIS EnrollmentIDs with missing or invalid values for LengthOfStay ,,10
-1,LSAReport,28,HomelessDate,int,,0,A count of distinct HMIS EnrollmentIDs with missing or invalid values for DateToStreetESSH ,,10
-1,LSAReport,29,TimesHomeless,int,,0,A count of distinct HMIS EnrollmentIDs with missing or invalid values for TimesHomelessPastThreeYears  ,,10
-1,LSAReport,30,MonthsHomeless,int,,0,A count of distinct HMIS EnrollmentIDs with missing or invalid values for MonthsHomelessPastThreeYears  ,,10
-1,LSAReport,31,Destination,int,,0,A count of distinct HMIS EnrollmentIDs with exits in the report period with missing or invalid values for Destination,,10
+1,LSAReport,26,DisablingCond,int,,0,A count of distinct HMIS EnrollmentIDs with missing or invalid values for DisablingCondition ,,10
+1,LSAReport,27,LivingSituation,int,,0,A count of distinct HMIS EnrollmentIDs with missing or invalid values for LivingSituation ,,10
+1,LSAReport,28,LengthOfStay,int,,0,A count of distinct HMIS EnrollmentIDs with missing or invalid values for LengthOfStay ,,10
+1,LSAReport,29,HomelessDate,int,,0,A count of distinct HMIS EnrollmentIDs with missing or invalid values for DateToStreetESSH ,,10
+1,LSAReport,30,TimesHomeless,int,,0,A count of distinct HMIS EnrollmentIDs with missing or invalid values for TimesHomelessPastThreeYears  ,,10
+1,LSAReport,31,MonthsHomeless,int,,0,A count of distinct HMIS EnrollmentIDs with missing or invalid values for MonthsHomelessPastThreeYears  ,,10
+1,LSAReport,32,Destination,int,,0,A count of distinct HMIS EnrollmentIDs with exits in the report period with missing or invalid values for Destination,,10
 2,LSAHousehold,1,RowTotal,int,,0,"The total number of households served in continuum ES, SH, TH, RRH, and/or PSH projects during the report period with the characteristics represented by the values in each column of the row. All values must be integers > 0. ",,10
 2,LSAHousehold,2,Stat,int,2,0,The household status related to continuum engagement on the first day of the earliest enrollment active during the report period.,,1
 2,LSAHousehold,3,ReturnTime,int,3,0,"When Stat = (2,3,4), the length of time in days between exit and the earliest active enrollment.",,3
