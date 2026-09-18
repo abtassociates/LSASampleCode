@@ -2,6 +2,10 @@
 
 Notable changes to the LSA sample code and sample data. Dates are when the change was merged; see each linked pull request for the full diff.
 
+## 2026-09-18
+
+- Steps 10.6, 10.7, and 11.2 (`10 LSACalculated Data Quality.sql`, `11 LSAReport DQ and ReportDate.sql`) scoped a household to the report's CoC by joining on `HouseholdID` alone, so any household member matching the CoC would qualify -- not specifically the head of household. Restricted the join to `RelationshipToHoH = 1`, matching the pattern already used in steps 9.6 and 11.1. Verified this does not change any currently published Sample Output numbers. Reported in [#1518](https://github.com/abtassociates/LSASampleCode/issues/1518). ([#1519](https://github.com/abtassociates/LSASampleCode/pull/1519))
+
 ## 2026-09-14
 
 - Fixed `07 LSAExit.sql` step 7.7.1b (`ch_Episodes_exit`) so an isolated ES/SH/Street date can again close its own episode. The v8 rework of step 7.7.1 into 7.7.1a/7.7.1b changed the episode-end join from `>=` to `>` against `episodeStart`, so a single, isolated date could no longer match itself as its own episode end. Step 5.9.1 (`ch_Episodes`), which was not part of that rework, still uses `>=` and was unaffected. Reported in [#1510](https://github.com/abtassociates/LSASampleCode/issues/1510). ([#1515](https://github.com/abtassociates/LSASampleCode/pull/1515))
