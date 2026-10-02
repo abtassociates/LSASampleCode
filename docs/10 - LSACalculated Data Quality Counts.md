@@ -202,7 +202,7 @@ flowchart LR
 **Value** = a count of distinct *EnrollmentID*s in hmis\_Enrollment where:
 
 -   *ProjectID* = lsa\_Project.**ProjectID** and lsa\_Project.**ProjectType** is not in (9,10)
--   *EnrollmentCoC* for the head of household’s enrollment = <u>ReportCoC</u>
+-   Any *EnrollmentCoC* associated with the *HouseholdID* = <u>ReportCoC</u>
 -   *ExitDate* is null or *ExitDate* \>= <u>ReportStart</u>; and
 -   *ExitDate* is null or *ExitDate* \> *EntryDate*; and
 -   The count of *PersonalID*s in hmis\_Enrollment with the same *HouseholdID* and a *RelationshipToHoH* \= 1 <> 1
@@ -232,7 +232,7 @@ flowchart LR
 **Value** = a count of distinct *EnrollmentID*s in hmis\_Enrollment where:
 
 -   *ProjectID* = lsa\_Project.**ProjectID** and lsa\_Project.**ProjectType** is not in (9,10)
--   *EnrollmentCoC* for the head of household’s enrollment = <u>ReportCoC</u>
+-   Any *EnrollmentCoC* associated with the *HouseholdID* = <u>ReportCoC</u>
 -   *ExitDate* is null or *ExitDate* \>= <u>ReportStart</u>; and
 -   *ExitDate* is null or *ExitDate* \> *EntryDate*; and
 -   *RelationshipToHoH* is NULL or not in (1,2,3,4,5)
