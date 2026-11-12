@@ -13,15 +13,15 @@ last_modified_date: 2026-08-09
 
 # 1.1 Background 
 
-Every year, the U.S. Department of Housing and Urban Development (HUD) submits an Annual Homeless Assessment Report (AHAR) to the United States Congress. The AHAR is a national-level report that provides information about homeless service providers, people and households experiencing homelessness, and various characteristics of that population. It informs strategic planning for federal, state, and local initiatives designed to prevent and end homelessness.
+Every year, the U.S. Department of Housing and Urban Development (HUD) submits an Annual Homeless Assessment Report (AHAR) to the United States Congress. The AHAR is a national-level report that provides information about homeless service providers, people and households who are homeless, and various characteristics of that population. It informs strategic planning for federal, state, and local initiatives designed to prevent and end homelessness.
 
 Nationwide, HUD has tasked Continuums of Care (CoCs) with coordinating homeless services in specific geographic areas. The AHAR is based on data provided annually by these CoCs in the form of three separate aggregate data submissions. US Census and other data are used for contextual analysis.
 
 HUD’s *Notice for Housing Inventory Count (HIC) and Point-in-Time (PIT) Data Collection for Continuum of Care (CoC) Program and the Emergency Solutions Grants (ESG) Program* defines the requirements for two components of continuum-level data used in the AHAR.
 
-**The HIC** provides data related to the capacity and utilization of residential projects dedicated to serving people experiencing homelessness on one night in the last 10 calendar days of January. CoCs provide HIC data to HUD by generating and uploading the report defined by this document, the **Longitudinal System Analysis** (LSA), using the date of the HIC as both the start and end dates.
+**The HIC** provides data related to the capacity and utilization of residential projects dedicated to serving people who are homeless on one night in the last 10 calendar days of January. CoCs provide HIC data to HUD by generating and uploading the report defined by this document, the **Longitudinal System Analysis** (LSA), using the date of the HIC as both the start and end dates.
 
-**The PIT** is a count of sheltered and unsheltered people who are experiencing homelessness on the same night in the last 10 calendar days of January. PIT data are manually entered.
+**The PIT** is a count of sheltered and unsheltered people who are homeless on the same night in the last 10 calendar days of January. PIT data are manually entered.
 
 The third component of data provided by CoCs for the AHAR is also submitted to HUD via the LSA using the start and end dates of the fiscal year for which it is being submitted. For people and households served by the CoC during the report period, the LSA includes:
   - Demographic characteristics like age, race/ethnicity, and veteran status;
@@ -143,13 +143,13 @@ The definitions here are intended to serve as a general reference and are not co
 
 **Enrollment** – A period in which a client receives services from a given project, beginning with the *Project Start Date* recorded in HMIS and ending on the *Project Exit Date*.
 
-**ES** – Emergency shelter projects. ES clients are considered to be experiencing homelessness while enrolled; any date between ES project entry and the day prior to exit is included in counts of days in ES/SH or on the street for purposes of determining chronic homelessness *as long as there is no conflicting data that identifies the client as enrolled in TH or housed in RRH/PSH*.
+**ES** – Emergency shelter projects. ES clients are considered to be homeless while enrolled; any date between ES project entry and the day prior to exit is included in counts of days in ES/SH or on the street for purposes of determining chronic homelessness *as long as there is no conflicting data that identifies the client as enrolled in TH or housed in RRH/PSH*.
 
 **EST** or **ES/SH/TH** – Emergency shelter, safe haven, and/or transitional housing projects; i.e., residential project types in which all clients are homeless while enrolled. Demographics for clients served in these three project types are reported in the combined ES/SH/TH project group.
 
 **Exit Cohorts** – Groups of households who exited from continuum projects and have no record of relevant system use in HMIS during the following 14 days. There are three exit cohort periods – and thus three exit cohorts – included in the LSA.
 
-**HIC** – Housing Inventory Count; a continuum-level report to HUD listing continuum ES, SH, TH, RRH, PSH, and OPH projects and associated bed and unit inventory dedicated to serving people experiencing homelessness on a single night; submitted to HUD annually via an LSA report generated for the date of the HIC.
+**HIC** – Housing Inventory Count; a continuum-level report to HUD listing continuum ES, SH, TH, RRH, PSH, and OPH projects and associated bed and unit inventory dedicated to serving people who are homeless on a single night; submitted to HUD annually via an LSA report generated for the date of the HIC.
 
 **HDX/HDX 2.0** – Homelessness Data Exchange; a HUD website that accepts and stores CoC-level reports, including the HIC, the PIT, the SPM report, and the LSA upload.
 
@@ -169,24 +169,24 @@ The definitions here are intended to serve as a general reference and are not co
 
 **PSH** – Permanent supportive housing for formerly homeless people.
 
--   PSH clients who are homeless at project entry based on *3.917 Living Situation* are considered to be experiencing homelessness until a documented *3.20 Housing Move-In Date* or exit, whichever comes first.
+-   PSH clients who are homeless at project entry based on *3.917 Living Situation* are considered to be homeless until a documented *3.20 Housing Move-In Date* or exit, whichever comes first.
 -   For clients who were in ES/SH or on the street at project entry, all time between *Approximate Date Started* and move-in is counted in determining chronic homelessness.
--   In general, a client may not be counted as experiencing homeless on any date between PSH move-in and the day prior to exit, regardless of other conflicting enrollment data. The only exception to this is for stays of less than seven days, and only if the dates fall between two dates less than seven days apart on which the client is otherwise documented as being on the street or in ES/SH.
+-   In general, a client may not be counted as homeless on any date between PSH move-in and the day prior to exit, regardless of other conflicting enrollment data. The only exception to this is for stays of less than seven days, and only if the dates fall between two dates less than seven days apart on which the client is otherwise documented as being on the street or in ES/SH.
 
 **Report period** – The period of time between the report start date and report end date report parameters.
 
 **RRH** – Rapid Re-Housing projects with the sub-type of ‘Housing with or without Services.’
 
--   RRH clients who are homeless at project entry based on *3.917 Living Situation* are considered to be experiencing homelessness until a documented *3.20 Housing Move-In Date* or exit, whichever comes first.
+-   RRH clients who are homeless at project entry based on *3.917 Living Situation* are considered to be homeless until a documented *3.20 Housing Move-In Date* or exit, whichever comes first.
 -   For clients who were in ES/SH or on the street at project entry, all time between *Approximate Date Started* and move-in is counted in determining chronic homelessness.
--   A client may not be counted as experiencing homelessness on any date between RRH move-in and the day prior to exit, regardless of other conflicting enrollment data. The only exception to this is for stays of less than seven days, and only if the dates fall between two dates less than seven days apart on which the client is otherwise documented as being on the street or in ES/SH.
+-   A client may not be counted as homeless on any date between RRH move-in and the day prior to exit, regardless of other conflicting enrollment data. The only exception to this is for stays of less than seven days, and only if the dates fall between two dates less than seven days apart on which the client is otherwise documented as being on the street or in ES/SH.
 
 **RRH-SO** – Rapid Re-Housing projects with the sub-type of ‘Services Only.’ This is a new designation with the HMIS Data Standards effective October 1, 2023. For reporting on FY2023 (which ends September 30,2023), RRH-SO enrollment data, if they exist at all, are incorporated in a limited manner:
 
 -   For RRH-SO clients who were in ES/SH or on the street at project entry, all dates between *Approximate Date Started* and the earliest of move-in, exit, or report end are counted in determining chronic homelessness.
 -   People and households served in RRH-SO are included in LSAPerson, LSAHousehold, and LSAExit.
 
-**SH** – Safe Haven projects. All SH clients are considered to be experiencing homelessness while enrolled; any date between SH project entry and the day prior to exit is included in counts of days in ES/SH or on the street for purposes of determining chronic homelessness *as long as there is no conflicting enrollment data that identifies the client as enrolled in TH or housed in RRH/PSH*.
+**SH** – Safe Haven projects. All SH clients are considered to be homeless while enrolled; any date between SH project entry and the day prior to exit is included in counts of days in ES/SH or on the street for purposes of determining chronic homelessness *as long as there is no conflicting enrollment data that identifies the client as enrolled in TH or housed in RRH/PSH*.
 
 **SPM** – HUD’s System Performance Measures report, a CoC-level report uploaded to or manually entered to the HDX.
 
@@ -194,7 +194,7 @@ The definitions here are intended to serve as a general reference and are not co
 
 **System path** – The distinct combination of project types in which a household was enrolled during a continuous period of system use that overlaps with the report/cohort period, including enrollments prior to the start of the report/cohort period.
 
-**TH** – Transitional housing for homeless people. All TH clients are considered to be experiencing homelessness while enrolled; however, no date between TH project entry and the day prior to exit may be included in counts of days in ES/SH or on the street for purposes of determining chronic homelessness, regardless of other conflicting enrollment data. The only exception to this is for stays of less than seven days, and only if the dates fall between two dates less than seven days apart on which the client is otherwise documented as being on the street or in ES/SH.
+**TH** – Transitional housing for homeless people. All TH clients are considered to be homeless while enrolled; however, no date between TH project entry and the day prior to exit may be included in counts of days in ES/SH or on the street for purposes of determining chronic homelessness, regardless of other conflicting enrollment data. The only exception to this is for stays of less than seven days, and only if the dates fall between two dates less than seven days apart on which the client is otherwise documented as being on the street or in ES/SH.
 
 **UN** – Unknown household type; includes at least one member without a valid date of birth and does not include both an adult and a child.
 
