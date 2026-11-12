@@ -311,24 +311,24 @@ required for the following:
 | 54   | Disabled Adult/HoH                                                  | 0,1,2,3,99 | tlsa\_Person.**DisabilityStatus** = 1                                                                                                  |
 | 55   | Fleeing Domestic Violence                                           | 0,1,2,3,99 | tlsa\_Person.**DVStatus** = 1                                                                                                          |
 | 56   | American Indian, Alaska Native, or Indigenous (only)                | 0,1,2,3,99 | **RaceEthnicity** = 1                                                                                                                  |
-| 57   | American Indian, Alaska Native, or Indigenous & Hispanic/Latina/e/o | 0,1,2,3,99 | **RaceEthnicity** = 16                                                                                                                 |
+| 57   | American Indian, Alaska Native, or Indigenous & Hispanic/Latina/o   | 0,1,2,3,99 | **RaceEthnicity** = 16                                                                                                                 |
 | 58   | Asian or Asian American (only)                                      | 0,1,2,3,99 | **RaceEthnicity** = 2                                                                                                                  |
-| 59   | Asian or Asian American & Hispanic/Latina/e/o                       | 0,1,2,3,99 | **RaceEthnicity** = 26                                                                                                                 |
+| 59   | Asian or Asian American & Hispanic/Latina/o                         | 0,1,2,3,99 | **RaceEthnicity** = 26                                                                                                                 |
 | 60   | Black, African American, or African (only)                          | 0,1,2,3,99 | **RaceEthnicity** = 3                                                                                                                  |
-| 61   | Black, African American, or African & Hispanic/Latina/e/o           | 0,1,2,3,99 | **RaceEthnicity** = 36                                                                                                                 |
-| 62   | Hispanic/Latina/e/o (only)                                          | 0,1,2,3,99 | **RaceEthnicity** = 6                                                                                                                  |
+| 61   | Black, African American, or African & Hispanic/Latina/o             | 0,1,2,3,99 | **RaceEthnicity** = 36                                                                                                                 |
+| 62   | Hispanic/Latina/o (only)                                            | 0,1,2,3,99 | **RaceEthnicity** = 6                                                                                                                  |
 | 63   | Middle Eastern or North African (only)                              | 0,1,2,3,99 | **RaceEthnicity** = 7                                                                                                                  |
-| 64   | Middle Eastern or North African & Hispanic/Latina/e/o               | 0,1,2,3,99 | **RaceEthnicity** = 67                                                                                                                 |
+| 64   | Middle Eastern or North African & Hispanic/Latina/o                 | 0,1,2,3,99 | **RaceEthnicity** = 67                                                                                                                 |
 | 65   | Native Hawaiian or Pacific Islander (only)                          | 0,1,2,3,99 | **RaceEthnicity** = 4                                                                                                                  |
-| 66   | Native Hawaiian or Pacific Islander & Hispanic/Latina/e/o           | 0,1,2,3,99 | **RaceEthnicity** = 46                                                                                                                 |
+| 66   | Native Hawaiian or Pacific Islander & Hispanic/Latina/o             | 0,1,2,3,99 | **RaceEthnicity** = 46                                                                                                                 |
 | 67   | White (only)                                                        | 0,1,2,3,99 | **RaceEthnicity** = 5                                                                                                                  |
-| 68   | White & Hispanic/Latina/e/o                                         | 0,1,2,3,99 | **RaceEthnicity** = 56                                                                                                                 |
-| 69   | Multi-Racial (not Hispanic/Latina/e/o)                              | 0,1,2,3,99 | **RaceEthnicity** \>=12**,** not in (98,99), does not include a 6                                                                      |
-| 70   | Multi-Racial & Hispanic/Latina/e/o)                                 | 0,1,2,3,99 | **RaceEthnicity** \>=126**,** includes a 6                                                                                             |
+| 68   | White & Hispanic/Latina/o                                           | 0,1,2,3,99 | **RaceEthnicity** = 56                                                                                                                 |
+| 69   | Multi-Racial (not Hispanic/Latina/o)                                | 0,1,2,3,99 | **RaceEthnicity** \>=12**,** not in (98,99), does not include a 6                                                                      |
+| 70   | Multi-Racial & Hispanic/Latina/o)                                   | 0,1,2,3,99 | **RaceEthnicity** \>=126**,** includes a 6                                                                                             |
 | 71   | American Indian, Alaska Native, or Indigenous (any combination)     | 0,1,2,3,99 | **RaceEthnicity** includes a 1                                                                                                         |
 | 72   | Asian or Asian American (any combination)                           | 0,1,2,3,99 | **RaceEthnicity** includes a 2                                                                                                         |
 | 73   | Black, African American, or African & Any Other (any combination)   | 0,1,2,3,99 | **RaceEthnicity** includes a 3                                                                                                         |
-| 74   | Hispanic/Latina/e/o (any combination)                               | 0,1,2,3,99 | **RaceEthnicity** includes a 6                                                                                                         |
+| 74   | Hispanic/Latina/o (any combination)                                 | 0,1,2,3,99 | **RaceEthnicity** includes a 6                                                                                                         |
 | 75   | Middle Eastern or North African & Any Other (any combination)       | 0,1,2,3,99 | **RaceEthnicity** includes a 7                                                                                                         |
 | 76   | Native Hawaiian or Pacific Islander & Any Other (any combination)   | 0,1,2,3,99 | **RaceEthnicity** includes a 4                                                                                                         |
 | 77   | White (any combination)                                             | 0,1,2,3,99 | **RaceEthnicity** includes a 5                                                                                                         |
@@ -366,24 +366,24 @@ subpopulation. For example, the subpopulation of Veterans Fleeing Domestic Viole
 | 54  | Disabled Adult/HoH                                                  |
 | 55  | Fleeing Domestic Violence                                           |
 | 56  | American Indian, Alaska Native, or Indigenous (only)                |
-| 57  | American Indian, Alaska Native, or Indigenous & Hispanic/Latina/e/o |
+| 57  | American Indian, Alaska Native, or Indigenous & Hispanic/Latina/o   |
 | 58  | Asian or Asian American (only)                                      |
-| 59  | Asian or Asian American & Hispanic/Latina/e/o                       |
+| 59  | Asian or Asian American & Hispanic/Latina/o                         |
 | 60  | Black, African American, or African (only)                          |
-| 61  | Black, African American, or African & Hispanic/Latina/e/o           |
-| 62  | Hispanic/Latina/e/o (only)                                          |
+| 61  | Black, African American, or African & Hispanic/Latina/o             |
+| 62  | Hispanic/Latina/o (only)                                            |
 | 63  | Middle Eastern or North African (only)                              |
-| 64  | Middle Eastern or North African & Hispanic/Latina/e/o               |
+| 64  | Middle Eastern or North African & Hispanic/Latina/o                 |
 | 65  | Native Hawaiian or Pacific Islander (only)                          |
-| 66  | Native Hawaiian or Pacific Islander & Hispanic/Latina/e/o           |
+| 66  | Native Hawaiian or Pacific Islander & Hispanic/Latina/o             |
 | 67  | White (only)                                                        |
-| 68  | White & Hispanic/Latina/e/o                                         |
-| 69  | Multi-Racial (not Hispanic/Latina/e/o)                              |
-| 70  | Multi-Racial & Hispanic/Latina/e/o)                                 |
+| 68  | White & Hispanic/Latina/o                                           |
+| 69  | Multi-Racial (not Hispanic/Latina/o)                                |
+| 70  | Multi-Racial & Hispanic/Latina/o)                                   |
 | 71  | American Indian, Alaska Native, or Indigenous (any combination)     |
 | 72  | Asian or Asian American (any combination)                           |
 | 73  | Black, African American, or African & Any Other (any combination)   |
-| 74  | Hispanic/Latina/e/o (any combination)                               |
+| 74  | Hispanic/Latina/o (any combination)                                 |
 | 75  | Middle Eastern or North African & Any Other (any combination)       |
 | 76  | Native Hawaiian or Pacific Islander & Any Other (any combination)   |
 | 77  | White (any combination)                                             |
