@@ -507,7 +507,7 @@ flowchart LR
 | EST/RRH/PSHStatus   |
 
 | **tlsa_HHID**       |
-|--------------------|
+|---------------------|
 | HoHID               |
 | ActiveHHType        |
 | Active              |
@@ -515,12 +515,12 @@ flowchart LR
 | EntryDate           |
 
 | **tlsa_Enrollment** |
-|--------------------|
+|---------------------|
 | EnrollmentID        |
 | EntryDate           |
-| **hmis_Enrollment** |
 
-|--------------------|
+| **hmis_Enrollment** |
+|---------------------|
 | EnrollmentID        |
 | PersonalID          |
 | EntryDate           |
