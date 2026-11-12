@@ -167,24 +167,24 @@ When the parent population is ‘All’ (0), the ID listed below is used. In com
 | 21 | Returning After Exit to PH | 0,1,2,3,99 | **Stat** = 2 | 0, 10-15 |
 | 22 | PSH Move-In during Report Period | 0,1,2,3,99 | **PSHMoveIn** = 1 | 0, 10-15 |
 | 23 | American Indian, Alaska Native, or Indigenous (only) HoH | 0,1,2,3,99 | **HoHRaceEthnicity** = 1 | 0, 10-15 |
-| 24 | American Indian, Alaska Native, or Indigenous & Hispanic/ HoH | 0,1,2,3,99 | **HoHRaceEthnicity** = 16 | 0, 10-15 |
+| 24 | American Indian, Alaska Native, or Indigenous & Hispanic/Latina/o HoH | 0,1,2,3,99 | **HoHRaceEthnicity** = 16 | 0, 10-15 |
 | 25 | Asian or Asian American (only) HoH | 0,1,2,3,99 | **HoHRaceEthnicity** = 2 | 0, 10-15 |
-| 26 | Asian or Asian American & Hispanic/ HoH | 0,1,2,3,99 | **HoHRaceEthnicity** = 26 | 0, 10-15 |
+| 26 | Asian or Asian American & Hispanic/Latina/o HoH | 0,1,2,3,99 | **HoHRaceEthnicity** = 26 | 0, 10-15 |
 | 27 | Black, African American, or African (only) HoH | 0,1,2,3,99 | **HoHRaceEthnicity** = 3 | 0, 10-15 |
-| 28 | Black, African American, or African & Hispanic/ HoH | 0,1,2,3,99 | **HoHRaceEthnicity** = 36 | 0, 10-15 |
-| 29 | Hispanic/ (only) HoH | 0,1,2,3,99 | **HoHRaceEthnicity** = 6 | 0, 10-15 |
+| 28 | Black, African American, or African & Hispanic/Latina/o HoH | 0,1,2,3,99 | **HoHRaceEthnicity** = 36 | 0, 10-15 |
+| 29 | Hispanic/Latina/o (only) HoH | 0,1,2,3,99 | **HoHRaceEthnicity** = 6 | 0, 10-15 |
 | 30 | Middle Eastern or North African (only) HoH | 0,1,2,3,99 | **HoHRaceEthnicity** = 7 | 0, 10-15 |
 | 31 | Middle Eastern or North African & Hispanic/Latina/o HoH | 0,1,2,3,99 | **HoHRaceEthnicity** = 67 | 0, 10-15 |
 | 32 | Native Hawaiian or Pacific Islander (only) HoH | 0,1,2,3,99 | **HoHRaceEthnicity** = 4 | 0, 10-15 |
-| 33 | Native Hawaiian or Pacific Islander & Hispanic/ HoH | 0,1,2,3,99 | **HoHRaceEthnicity** = 46 | 0, 10-15 |
+| 33 | Native Hawaiian or Pacific Islander & Hispanic/Latina/o HoH | 0,1,2,3,99 | **HoHRaceEthnicity** = 46 | 0, 10-15 |
 | 34 | White (only) HoH | 0,1,2,3,99 | **HoHRaceEthnicity** = 5 | 0, 10-15 |
-| 35 | White & Hispanic/ HoH | 0,1,2,3,99 | **HoHRaceEthnicity** = 56 | 0, 10-15 |
-| 36 | Multi-Racial (not Hispanic/) HoH | 0,1,2,3,99 | **HoHRaceEthnicity** \>=12, is not in (98, 99)**,** does not include a 6 | 0, 10-15 |
-| 37 | Multi-Racial & Hispanic/) HoH | 0,1,2,3,99 | **HoHRaceEthnicity** \>=126**,** includes a 6 | 0, 10-15 |
+| 35 | White & Hispanic/Latina/o HoH | 0,1,2,3,99 | **HoHRaceEthnicity** = 56 | 0, 10-15 |
+| 36 | Multi-Racial (not Hispanic/Latina/o) HoH | 0,1,2,3,99 | **HoHRaceEthnicity** \>=12, is not in (98, 99)**,** does not include a 6 | 0, 10-15 |
+| 37 | Multi-Racial & Hispanic/Latina/o) HoH | 0,1,2,3,99 | **HoHRaceEthnicity** \>=126**,** includes a 6 | 0, 10-15 |
 | 38 | American Indian, Alaska Native, or Indigenous (any combination) HoH | 0,1,2,3,99 | **HoHRaceEthnicity** includes a 1 | 0, 10-15 |
 | 39 | Asian or Asian American (any combination) HoH | 0,1,2,3,99 | **HoHRaceEthnicity** includes a 2 | 0, 10-15 |
 | 40 | Black, African American, or African & Any Other (any combination) HoH | 0,1,2,3,99 | **HoHRaceEthnicity** includes a 3 | 0, 10-15 |
-| 41 | Hispanic/ (any combination) HoH | 0,1,2,3,99 | **HoHRaceEthnicity** includes a 6 | 0, 10-15 |
+| 41 | Hispanic/Latina/o (any combination) HoH | 0,1,2,3,99 | **HoHRaceEthnicity** includes a 6 | 0, 10-15 |
 | 42 | Middle Eastern or North African & Any Other (any combination) HoH | 0,1,2,3,99 | **HoHRaceEthnicity** includes a 7 | 0, 10-15 |
 | 43 | Native Hawaiian or Pacific Islander & Any Other (any combination) HoH | 0,1,2,3,99 | **HoHRaceEthnicity** includes a 4 | 0, 10-15 |
 | 44 | White (any combination) HoH | 0,1,2,3,99 | **HoHRaceEthnicity** includes a 5 | 0, 10-15 |
