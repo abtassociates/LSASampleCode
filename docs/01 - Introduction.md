@@ -26,7 +26,7 @@ HUD’s *Notice for Housing Inventory Count (HIC) and Point-in-Time (PIT) Data C
 The third component of data provided by CoCs for the AHAR is also submitted to HUD via the LSA using the start and end dates of the fiscal year for which it is being submitted. For people and households served by the CoC during the report period, the LSA includes:
   - Demographic characteristics like age, race/ethnicity, and veteran status;
   - Length of time homeless and patterns of system use;
-  - Information specific to populations whose needs and/or eligibility for services may differ from the broader homeless population, such as veterans, people and households experiencing chronic homelessness, and others; and
+  - Information specific to populations whose needs and/or eligibility for services may differ from the broader homeless population, such as veterans, people and households who are chronically homelessness, and others; and
   - Housing outcomes for those who exit the homeless services system.
 
 The LSA also incorporates follow-up reporting on households and populations who exited the system in three discrete periods: two years prior to the report period, one year prior to the report period, and the first six months of the report period. This includes:
@@ -161,7 +161,7 @@ The definitions here are intended to serve as a general reference and are not co
 
 **OPH** – Permanent housing project types other than PSH or RRH; specifically, projects typed in HMIS as *PH – Housing Only* (9) or *PH – Housing with Services (no disability required for entry)* (10). Apart from project descriptor data and point-in-time counts for the HIC, data associated with OPH projects is excluded from the LSA.
 
-**PIT Count** – Point in Time Count; a continuum-level report to HUD, required at least every two years, that reports on the total number of people experiencing sheltered and unsheltered homelessness in the geographic area of the continuum on a single night, usually on a night in the last 10 calendar days of January.
+**PIT Count** – Point in Time Count; a continuum-level report to HUD, required at least every two years, that reports on the total number of homeless people who are sheltered and unsheltered in the geographic area of the continuum on a single night, usually on a night in the last 10 calendar days of January.
 
 **Population** – As used in this document, a group of people in households with one or more members who have specific characteristics that may indicate that the households have needs and/or eligibility for services that differ from the broader homeless population; for example, households fleeing domestic violence or unaccompanied children. The LSA upload includes population-specific output.
 
