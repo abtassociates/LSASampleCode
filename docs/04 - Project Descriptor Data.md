@@ -361,7 +361,7 @@ HDX 2.0 validation of Inventory.csv is generally consistent with the HMIS CSV sp
 | CHYouthBedInventory  | Count of dedicated beds for chronically homeless youth between 18 and 24; may not be NULL                                           |
 | YouthBedInventory    | Count of dedicated beds for youth between 18 and 24; may not be NULL                                                                |
 | CHBedInventory       | Count of dedicated beds for chronically homeless clients with no requirements based on veteran status or age; may not be NULL       |
-| OtherBedInventory    | Count of beds for people experiencing homelessness with no requirements based on CH status, veteran status, or age; may not be NULL |
+| OtherBedInventory    | Count of beds for people who are homeless with no requirements based on CH status, veteran status, or age; may not be NULL          |
 | ESBedType            | NULL unless *ProjectType* in (0,1); otherwise, in (1,2,3)                                                                           |
 | InventoryStartDate   | \< ReportEnd                                                                                                                        |
 | InventoryEndDate     | NULL or \>= ReportStart                                                                                                             |
