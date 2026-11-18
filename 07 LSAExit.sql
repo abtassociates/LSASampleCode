@@ -687,6 +687,7 @@ where (ex.ExitFrom = 6 and qx.MoveInDate < cd.CohortStart)
 
 update ex
 set ex.SystemPath = case ptype.summary
+	when 0 then -1
 	when 1 then 1
 	when 10 then 2
 	when 11 then 3
@@ -740,6 +741,7 @@ where ex.Cohort = 0 and ex.SystemPath is null
 
 update ex
 set ex.SystemPath = case ptype.summary
+	when 0 then -1
 	when 1 then 1
 	when 10 then 2
 	when 11 then 3
@@ -793,6 +795,7 @@ where ex.Cohort = -1 and ex.SystemPath is null
 
 update ex
 set ex.SystemPath = case ptype.summary
+	when 0 then -1
 	when 1 then 1
 	when 10 then 2
 	when 11 then 3

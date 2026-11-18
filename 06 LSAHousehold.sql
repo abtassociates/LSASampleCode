@@ -595,7 +595,7 @@ set hh.ESTGeography = case when hh.ESTStatus = 0 then -1
 	
 	update hh
 	set hh.Stat = case 
-			when PSHStatus in (11,12) or RRHStatus in (11,12) or ESTStatus in (11,12)
+			when PSHStatus in (11,12) or RRHStatus in (11,12) or ESTStatus in (11,12) or RRHSOStatus in (11,12)
 				then 5
 			when hh.StatEnrollmentID is null then 1
 			when dateadd(dd, 15, prior.ExitDate) > hh.FirstEntry then 5 
@@ -605,7 +605,7 @@ set hh.ESTGeography = case when hh.ESTStatus = 0 then -1
 		--Note:  ReturnTime is set to the actual number of days here and grouped into LSA categories
 		--       in 6.19 like other counts of days
 		, hh.ReturnTime = case 
-			when PSHStatus in (11,12) or RRHStatus in (11,12) or ESTStatus in (11,12) 
+			when PSHStatus in (11,12) or RRHStatus in (11,12) or ESTStatus in (11,12) or RRHSOStatus in (11,12)
 				or hh.StatEnrollmentID is null 
 				-- The line below has been corrected from >= to just >  
 				or dateadd(dd, 15, prior.ExitDate) > hh.FirstEntry then -1
@@ -673,6 +673,7 @@ set hh.ESTGeography = case when hh.ESTStatus = 0 then -1
 			from tlsa_HHID hhid
 			inner join lsa_Report rpt on hhid.ExitDate < rpt.ReportStart
 			where hhid.HoHID = hh.HoHID and hhid.ActiveHHType = hh.HHType 
+			and hhid.LSAProjectType in (0,1,2,3,8,13)
 			and dateadd(dd, 6, hhid.ExitDate) >= hh.FirstEntry) is null
 
 	insert into sys_TimePadded (HoHID, HHType, Cohort, StartDate, EndDate, Step)
@@ -686,7 +687,7 @@ set hh.ESTGeography = case when hh.ESTStatus = 0 then -1
 	inner join tlsa_HHID hhid on hhid.HoHID = hh.HoHID and hhid.ActiveHHType = hh.HHType
 		and (hhid.Active = 1 or hhid.ExitDate < rpt.ReportStart) 
 	where hh.LastInactive is null 
-		and (hhid.LSAProjectType <> 1)
+		and (hhid.LSAProjectType in (0,2,3,8,13))
 	union
 	select distinct hh.HoHID, hh.HHType, 1
 		, bn.DateProvided	
@@ -953,6 +954,8 @@ set hh.ESTGeography = case when hh.ESTStatus = 0 then -1
 update hh
 set hh.SystemPath = 
 	case when hh.ESTStatus not in (21,22) and hh.RRHStatus not in (21,22) and hh.PSHMoveIn = 2 
+		then -1
+	when hh.ESTStatus = 0 and hh.RRHStatus = 0 and hh.PSHStatus = 0 and hh.RRHSOStatus <> 0
 		then -1
 	when hh.ESDays >= 1 and hh.THDays = 0 and hh.RRHStatus = 0 and hh.PSHStatus = 0 
 		then 1
