@@ -248,6 +248,7 @@ inner join tlsa_HHID qx on qx.HouseholdID = ex.QualifyingExitHHID
 	from tlsa_ExitHoHAdult ha
 		inner join tlsa_Enrollment chn on chn.PersonalID = ha.PersonalID
 			and chn.EntryDate > ha.CHStart 
+			and chn.EntryDate <= (select max(latest.LastActive) from tlsa_ExitHoHAdult latest where latest.PersonalID = ha.PersonalID)
 		inner join hmis_Enrollment hn on hn.EnrollmentID = chn.EnrollmentID
 		inner join ref_Calendar cal on 
 			cal.theDate >= hn.DateToStreetESSH
@@ -346,8 +347,9 @@ inner join tlsa_HHID qx on qx.HouseholdID = ex.QualifyingExitHHID
 	set CHTime = 365, CHTimeStatus = 1, ha.Step = '7.8.1'
 	from tlsa_ExitHoHAdult ha
 		inner join ch_Episodes_exit chep on chep.PersonalID = ha.PersonalID
+			and chep.episodeDays >= 365
 			and chep.episodeEnd > dateadd(yyyy, -1, ha.LastActive) 
-			and chep.episodeStart <= dateadd(yyyy, -1, chep.episodeEnd)
+			and chep.episodeEnd <= ha.LastActive
 
 	--Clients with a total of 365+ days in the three year period and at least four episodes 
 	--  meet time criteria for CH
@@ -360,7 +362,7 @@ inner join tlsa_HHID qx on qx.HouseholdID = ex.QualifyingExitHHID
 			else NULL end 
 	    , ha.Step = '7.8.2'
 	from tlsa_ExitHoHAdult ha
-	inner join (select hoha.PersonalID, hoha.Cohort
+	inner join (select hoha.PersonalID, hoha.QualifyingExitHHID, hoha.Cohort
 			, count(distinct chi.ESSHStreetDate) as count_days 
 			, count(distinct chep.episodeStart) as count_eps
 		from tlsa_ExitHoHAdult hoha 
@@ -368,7 +370,8 @@ inner join tlsa_HHID qx on qx.HouseholdID = ex.QualifyingExitHHID
 			and chi.ESSHStreetDate between hoha.CHStart and hoha.LastActive
 		inner join ch_Episodes_exit chep on chep.PersonalID = hoha.PersonalID
 			and chep.episodeEnd between hoha.CHStart and hoha.LastActive 
-		group by hoha.PersonalID, hoha.Cohort) time_sum on time_sum.PersonalID = ha.PersonalID and time_sum.Cohort = ha.Cohort
+		group by hoha.PersonalID, hoha.QualifyingExitHHID, hoha.Cohort) time_sum on time_sum.PersonalID = ha.PersonalID 
+			and time_sum.QualifyingExitHHID = ha.QualifyingExitHHID and time_sum.Cohort = ha.Cohort
 	where ha.CHTime is null
 
 	update ha
@@ -687,6 +690,7 @@ where (ex.ExitFrom = 6 and qx.MoveInDate < cd.CohortStart)
 
 update ex
 set ex.SystemPath = case ptype.summary
+	when 0 then -1
 	when 1 then 1
 	when 10 then 2
 	when 11 then 3
@@ -740,6 +744,7 @@ where ex.Cohort = 0 and ex.SystemPath is null
 
 update ex
 set ex.SystemPath = case ptype.summary
+	when 0 then -1
 	when 1 then 1
 	when 10 then 2
 	when 11 then 3
@@ -793,6 +798,7 @@ where ex.Cohort = -1 and ex.SystemPath is null
 
 update ex
 set ex.SystemPath = case ptype.summary
+	when 0 then -1
 	when 1 then 1
 	when 10 then 2
 	when 11 then 3
