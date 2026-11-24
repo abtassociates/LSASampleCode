@@ -298,9 +298,10 @@ where core.LSAProjectType <> 1 or core.LastBedNight is not null
 		and nbn.DateDeleted is null
 	inner join tlsa_HHID hhid on hhid.HouseholdID = nbn.HouseholdID and svc.DateProvided >= hhid.EntryDate 
 		and (hhid.ExitDate is null or svc.DateProvided < hhid.ExitDate)
-	left outer join hmis_Exit nbnx on nbnx.EnrollmentID = nbn.EnrollmentID and nbnx.DateDeleted is null
 	inner join lsa_Report rpt on svc.DateProvided between rpt.LookbackDate and rpt.ReportEnd
-	where hhid.LSAProjectType = 1 
+	left outer join hmis_Exit nbnx on nbnx.EnrollmentID = nbn.EnrollmentID and nbnx.DateDeleted is null
+		and nbnx.ExitDate <= rpt.ReportEnd
+	where hhid.LSAProjectType = 1
 		and svc.RecordType = 200 and svc.DateDeleted is null
 		and svc.DateProvided >= nbn.EntryDate 
 		and svc.DateProvided >= rpt.LookbackDate 
